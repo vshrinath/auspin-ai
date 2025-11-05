@@ -1,0 +1,56 @@
+{
+  "name": "salient-platform",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Schema-driven monorepo template (Next.js + FastAPI) for Salient projects",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{js,ts,tsx,json,css,md}\"",
+    "clean": "rm -rf node_modules .turbo apps/**/node_modules",
+    "prepare": "husky install",
+    "setup": "./scripts/setup-env.sh",
+    "tailwind:init": "(cd apps/web && node ../../node_modules/tailwindcss/lib/cli.js init -p) || node ./node_modules/tailwindcss/lib/cli.js init -p"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "autoprefixer": "^10.4.21",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "postcss": "^8.5.6",
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.13",
+    "turbo": "^2.0.0",
+    "typescript": "^5.6.3"
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": false,
+    "printWidth": 90,
+    "trailingComma": "es5",
+    "arrowParens": "always"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "npx eslint --config apps/web/eslint.config.mjs --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,css}": [
+      "prettier --write"
+    ]
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "tools/*"
+  ],
+  "dependencies": {
+    "@headlessui/react": "^2.2.9",
+    "@heroicons/react": "^2.2.0",
+    "@workos-inc/node": "^7.72.1"
+  }
+}

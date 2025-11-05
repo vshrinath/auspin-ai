@@ -1,0 +1,8 @@
+{
+  "HeroSimpleCentered": {
+    "variant": "simple centered",
+    "source": "Tailwind UI",
+    "path": "./HeroSimpleCentered.tsx",
+    "framework": "agnostic"
+  }
+}

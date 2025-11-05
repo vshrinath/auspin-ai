@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Force Tailwind to work in Storybook */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Ensure common Tailwind classes work */
+@layer utilities {
+  .bg-white { background-color: white !important; }
+  .bg-red-500 { background-color: #ef4444 !important; }
+  .text-white { color: white !important; }
+  .text-gray-900 { color: #111827 !important; }
+  .text-gray-500 { color: #6b7280 !important; }
+  .p-4 { padding: 1rem !important; }
+  .rounded { border-radius: 0.25rem !important; }
+}

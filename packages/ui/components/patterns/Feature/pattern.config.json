@@ -1,0 +1,444 @@
+{
+  "section": "Feature",
+  "components": [
+    {
+      "componentName": "BentoGridThreeColumn",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Bento Grid/BentoGridThreeColumn.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "BentoGridTwoRow",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Bento Grid/BentoGridTwoRow.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "BentoGridTwoRowWithThreeColumn",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Bento Grid/BentoGridTwoRowWithThreeColumn.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "BlogSingleColumn",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Blog/BlogSingleColumn.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "BlogSingleColumnWithImages",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Blog/BlogSingleColumnWithImages.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "BlogThreeColumn",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Blog/BlogThreeColumn.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "BlogThreeColumnBackgroundImages",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Blog/BlogThreeColumnBackgroundImages.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "BlogThreeColumnWithImages",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Blog/BlogThreeColumnWithImages.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "BlogWithFeaturedPost",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Blog/BlogWithFeaturedPost.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "ContactForm",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Contact/ContactForm.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "ContactFormAndAddress",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Contact/ContactFormAndAddress.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CtaSimpleCenterdWithBrand",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/CTA/CtaSimpleCenterdWithBrand.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CtaSimpleCentered",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/CTA/CtaSimpleCentered.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CtaSimpleStacked",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/CTA/CtaSimpleStacked.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CtaSplitWithImage",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/CTA/CtaSplitWithImage.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CtaTwoColumnWithPhoto",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/CTA/CtaTwoColumnWithPhoto.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CtaWithImageTiles",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/CTA/CtaWithImageTiles.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FaqsSimple",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/FAQs/FaqsSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FaqsWithAccordian",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/FAQs/FaqsWithAccordian.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FeatureSimple",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Feature/FeatureSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FeatureThreeColumnWithIcons",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Feature/FeatureThreeColumnWithIcons.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FeatureWithLargeScreenshot",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Feature/FeatureWithLargeScreenshot.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FeatureWithProductScreenshot",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Feature/FeatureWithProductScreenshot.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FeatureWithTestimonial",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Feature/FeatureWithTestimonial.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FooterFourColumn",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Footer/FooterFourColumn.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FooterSimple",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Footer/FooterSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FooterWithNewsletter",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Footer/FooterWithNewsletter.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "HeaderCentered",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Header/HeaderCentered.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "HeaderSimple",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Header/HeaderSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "HeaderSimpleWithBackground",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Header/HeaderSimpleWithBackground.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "HeaderWithCards",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Header/HeaderWithCards.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "HeaderWithStats",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Header/HeaderWithStats.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "LogoCloudsGrid",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Logo clouds/LogoCloudsGrid.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "LogoCloudsLogoOnRight",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Logo clouds/LogoCloudsLogoOnRight.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "LogoCloudsSimple",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Logo clouds/LogoCloudsSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "LogoCloudsWithTestimonial",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Logo clouds/LogoCloudsWithTestimonial.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "NewsletterSimple",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Newsletter/NewsletterSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "NewsletterSimpleBrandColor",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Newsletter/NewsletterSimpleBrandColor.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "NewsletterSimpleCard",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Newsletter/NewsletterSimpleCard.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "NewsletterWithDetails",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Newsletter/NewsletterWithDetails.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "PricingSinglePriceWithDetails",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Pricing/PricingSinglePriceWithDetails.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "PricingThreeTiers",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Pricing/PricingThreeTiers.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "PricingThreeTiersComparisonTable",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Pricing/PricingThreeTiersComparisonTable.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "PricingThreeTiersWithLogo",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Pricing/PricingThreeTiersWithLogo.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "PricingThreeTiersWithToggle",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Pricing/PricingThreeTiersWithToggle.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "PricingTwoTiersEmphasis",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Pricing/PricingTwoTiersEmphasis.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "StatsSimple",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Stats/StatsSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "StatsSplitWithImage",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Stats/StatsSplitWithImage.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "StatsTimeline",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Stats/StatsTimeline.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "StatsWithDescription",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Stats/StatsWithDescription.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TeamFullWidthVerticalImages",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Team/TeamFullWidthVerticalImages.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TeamGridWithRoundImages",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Team/TeamGridWithRoundImages.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TeamLargeGridWithCards",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Team/TeamLargeGridWithCards.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TeamWithLargeImages",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Team/TeamWithLargeImages.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TeamWithSmallImages",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Team/TeamWithSmallImages.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TeamWithVerticalImages",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Team/TeamWithVerticalImages.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TestimonialsGrid",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Testimonials/TestimonialsGrid.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TestimonialsSingleCentered",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Testimonials/TestimonialsSingleCentered.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TestimonialsSingleWithAvatar",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Testimonials/TestimonialsSingleWithAvatar.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TestimonialsTwoSideBySide",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Testimonials/TestimonialsTwoSideBySide.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TestimonialsWithBackgroundImage",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Testimonials/TestimonialsWithBackgroundImage.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TestimonialsWithStarRating",
+      "variant": "With product screenshot",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Testimonials/TestimonialsWithStarRating.tsx",
+      "framework": "agnostic"
+    }
+  ],
+  "metadata": {
+    "created": "2025-11-04T08:56:20.129Z",
+    "lastUpdated": "2025-11-04T08:56:20.150Z",
+    "version": "1.0.0"
+  }
+}

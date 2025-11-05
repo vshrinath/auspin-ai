@@ -1,0 +1,822 @@
+{
+  "section": "Navbar",
+  "components": [
+    {
+      "componentName": "ActionPanelsSimple",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Action panels/ActionPanelsSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "ActionPanelsWithInput",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Action panels/ActionPanelsWithInput.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "ActionPanelsWithToggle",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Action panels/ActionPanelsWithToggle.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "AlertsWithActions",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Alerts/AlertsWithActions.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "AlertsWithDescription",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Alerts/AlertsWithDescription.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "AlertsWithDismissButton",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Alerts/AlertsWithDismissButton.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "AlertsWithLink",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Alerts/AlertsWithLink.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "BannerBottomAligned",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Banner/BannerBottomAligned.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "BannerFloatingAtBottom",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Banner/BannerFloatingAtBottom.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "BannerOnBrand",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Banner/BannerOnBrand.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "BannerPrivacyFullWidth",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Banner/BannerPrivacyFullWidth.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "BannerPrivacyNotice",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Banner/BannerPrivacyNotice.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "BannerWithButton",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Banner/BannerWithButton.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "BannerWithLink",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Banner/BannerWithLink.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "BreadcrumbsSimple",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Breadcrumbs/BreadcrumbsSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CalendarsDayView",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Calendars/CalendarsDayView.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CalendarsDouble",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Calendars/CalendarsDouble.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CalendarsMonthView",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Calendars/CalendarsMonthView.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CalendarsSideBySide",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Calendars/CalendarsSideBySide.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CalendarsSmallWithMeetings",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Calendars/CalendarsSmallWithMeetings.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CalendarsWeekView",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Calendars/CalendarsWeekView.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CalendarsYearView",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Calendars/CalendarsYearView.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CardHeadingsSimple",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Card headings/CardHeadingsSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CardHeadingsWithActions",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Card headings/CardHeadingsWithActions.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CardHeadingsWithAvatarAndActions",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Card headings/CardHeadingsWithAvatarAndActions.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CardHeadingsWithAvatarMetaAndDropdown",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Card headings/CardHeadingsWithAvatarMetaAndDropdown.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CheckboxesList",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Checkboxes/CheckboxesList.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "CheckboxesListWithHeading",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Checkboxes/CheckboxesListWithHeading.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "DividersWithButton",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Dividers/DividersWithButton.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "DividersWithLabel",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Dividers/DividersWithLabel.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FeedsMultipleItemTypes",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Feeds/FeedsMultipleItemTypes.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FeedsSimpleWithIcons",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Feeds/FeedsSimpleWithIcons.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FeedsWithComments",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Feeds/FeedsWithComments.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FlyoutMenuFullWidthTwoColumns",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Flyout menu/FlyoutMenuFullWidthTwoColumns.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FlyoutMenuSimple",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Flyout menu/FlyoutMenuSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FlyoutMenuSimpleWithDescriptions",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Flyout menu/FlyoutMenuSimpleWithDescriptions.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FlyoutMenuStackedWithFooterList",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Flyout menu/FlyoutMenuStackedWithFooterList.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FlyoutMenuTwoColumns",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Flyout menu/FlyoutMenuTwoColumns.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FormStacked",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Form/FormStacked.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "FormTwoColumns",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Form/FormTwoColumns.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "GridListsActionsWithSharedBorders",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Grid lists/GridListsActionsWithSharedBorders.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "GridListsContactCards",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Grid lists/GridListsContactCards.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "GridListsImagesWithDetails",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Grid lists/GridListsImagesWithDetails.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "GridListsSimpleCards",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Grid lists/GridListsSimpleCards.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "InputGroupsCreditCardInput",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Input groups/InputGroupsCreditCardInput.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "InputGroupsDisabledState",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Input groups/InputGroupsDisabledState.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "InputGroupsMoneyInput",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Input groups/InputGroupsMoneyInput.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "InputGroupsPhoneInput",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Input groups/InputGroupsPhoneInput.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "InputGroupsWithKeyboardShortcut",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Input groups/InputGroupsWithKeyboardShortcut.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "InputGroupsWithLabel",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Input groups/InputGroupsWithLabel.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "InputGroupsWithLabelAndHelpText",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Input groups/InputGroupsWithLabelAndHelpText.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "InputGroupsWithValidationError",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Input groups/InputGroupsWithValidationError.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "ModalSingleAction",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Modal/ModalSingleAction.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "ModalTwoActions",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Modal/ModalTwoActions.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "ModalWithDismissButton",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Modal/ModalWithDismissButton.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "NavbarBrandBackground",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Navbar/NavbarBrandBackground.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "NavbarFullWidthFlyoutMenu",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Navbar/NavbarFullWidthFlyoutMenu.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "NavbarWithCenteredLogo",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Navbar/NavbarWithCenteredLogo.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "NavbarWithFlyoutMenu",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Navbar/NavbarWithFlyoutMenu.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "NotificationsSimple",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Notifications/NotificationsSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "NotificationsTwoButtons",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Notifications/NotificationsTwoButtons.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "NotificationsWithActions",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Notifications/NotificationsWithActions.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "NotificationsWithAvatar",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Notifications/NotificationsWithAvatar.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "PageHeadingsActionsAndBreadcrumbs",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Page headings/PageHeadingsActionsAndBreadcrumbs.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "PageHeadingsCardWithAvatarAndActions",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Page headings/PageHeadingsCardWithAvatarAndActions.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "PageHeadingsMetaAndActions",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Page headings/PageHeadingsMetaAndActions.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "PageHeadingsWithAvatarAndActions",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Page headings/PageHeadingsWithAvatarAndActions.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "PageHeadingsWithBannerImage",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Page headings/PageHeadingsWithBannerImage.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "PageHeadingsWithFilterAndActions",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Page headings/PageHeadingsWithFilterAndActions.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "PageHeadingsWithLogoMetaAndActions",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Page headings/PageHeadingsWithLogoMetaAndActions.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "PaginationCenteredNumberPages",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Pagination/PaginationCenteredNumberPages.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "PaginationSimpleCardFooter",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Pagination/PaginationSimpleCardFooter.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "ProgressBarsBullets",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Progress bars/ProgressBarsBullets.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "ProgressBarsCircles",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Progress bars/ProgressBarsCircles.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "ProgressBarsLine",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Progress bars/ProgressBarsLine.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "RadioGroupCards",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Radio group/RadioGroupCards.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "RadioGroupColorPicker",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Radio group/RadioGroupColorPicker.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "RadioGroupListInTable",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Radio group/RadioGroupListInTable.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "RadioGroupNotificationSelection",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Radio group/RadioGroupNotificationSelection.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "RadioGroupStackedCards",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Radio group/RadioGroupStackedCards.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "SearchSimple",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Search/SearchSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "SearchWithFooter",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Search/SearchWithFooter.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "SearchWithPreview",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Search/SearchWithPreview.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "SectionHeadingsSimple",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Section headings/SectionHeadingsSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "SectionHeadingsWithActions",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Section headings/SectionHeadingsWithActions.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "SectionHeadingsWithActionsAndTabs",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Section headings/SectionHeadingsWithActionsAndTabs.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "SectionHeadingsWithBadgeAndDropdown",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Section headings/SectionHeadingsWithBadgeAndDropdown.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "SectionHeadingsWithDescription",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Section headings/SectionHeadingsWithDescription.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "SectionHeadingsWithInlineTabs",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Section headings/SectionHeadingsWithInlineTabs.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "SectionHeadingsWithLabel",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Section headings/SectionHeadingsWithLabel.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "SelectMenuAssignTo",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Select menu/SelectMenuAssignTo.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "SelectMenuSimple",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Select menu/SelectMenuSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "SignInCard",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Sign in/SignInCard.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "SignInSimple",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Sign in/SignInSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "SignInSplitScreen",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Sign in/SignInSplitScreen.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "StackedListsFullWidth",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Stacked lists/StackedListsFullWidth.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "StackedListsSimple",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Stacked lists/StackedListsSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "StackedListsWithBadgesButtonsAndActionMenu",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Stacked lists/StackedListsWithBadgesButtonsAndActionMenu.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "StackedListsWithLinks",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Stacked lists/StackedListsWithLinks.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "StackedListsWithLinksAndActionMenu",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Stacked lists/StackedListsWithLinksAndActionMenu.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TablesSimple",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Tables/TablesSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TablesStackedMobileColumns",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Tables/TablesStackedMobileColumns.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TablesStripedRows",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Tables/TablesStripedRows.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TablesWithCheckboxes",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Tables/TablesWithCheckboxes.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TablesWithSortableHeaders",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Tables/TablesWithSortableHeaders.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TablesWithStickyHeader",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Tables/TablesWithStickyHeader.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TablesWithVerticalLines",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Tables/TablesWithVerticalLines.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TabsSimple",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Tabs/TabsSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TabsWithBadges",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Tabs/TabsWithBadges.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TextBlockThreeColumnWithImage",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Text block/TextBlockThreeColumnWithImage.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TextBlockTwoByTwo",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Text block/TextBlockTwoByTwo.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TextBlockWithHeader",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Text block/TextBlockWithHeader.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TogglesSimple",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Toggles/TogglesSimple.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TogglesWithIcon",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Toggles/TogglesWithIcon.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TogglesWithLabel",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Toggles/TogglesWithLabel.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "TogglesWithLabelAndDescription",
+      "variant": "With flyout menu",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/Toggles/TogglesWithLabelAndDescription.tsx",
+      "framework": "agnostic"
+    }
+  ],
+  "metadata": {
+    "created": "2025-11-04T11:47:48.038Z",
+    "lastUpdated": "2025-11-04T11:47:48.061Z",
+    "version": "1.0.0"
+  }
+}

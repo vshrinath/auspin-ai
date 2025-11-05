@@ -1,0 +1,82 @@
+services:
+  web:
+    image: node:22-alpine
+    working_dir: /app
+    command: sh -c "npm install && npm run dev -- --hostname 0.0.0.0 --port 3000"
+    volumes:
+      - ./apps/web:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    environment:
+      - NEXT_TELEMETRY_DISABLED=1
+    depends_on:
+      - api
+    networks:
+      - salient-net
+
+  docs:
+    image: node:22-alpine
+    working_dir: /app
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0 --port 4321"
+    volumes:
+      - ./apps/docs:/app
+      - /app/node_modules
+    ports:
+      - "4321:4321"
+    env_file:
+      - .env
+    environment:
+      - HOST=0.0.0.0
+    networks:
+      - salient-net
+
+  api:
+    build:
+      context: ./apps/api
+      dockerfile: Dockerfile
+    command: uvicorn main:app --host 0.0.0.0 --port 8080 --reload
+    volumes:
+      - ./apps/api:/app
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHON_VERSION=3.13.0
+    depends_on:
+      - db
+    networks:
+      - salient-net
+
+  db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: salient
+      POSTGRES_PASSWORD: salient123
+      POSTGRES_DB: salient
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - salient-net
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - salient-net
+
+networks:
+  salient-net:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local

@@ -1,0 +1,14 @@
+{
+  "name": "@salient/ui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./index.ts",
+  "module": "./index.ts",
+  "types": "./index.ts",
+  "exports": {
+    ".": "./index.ts",
+    "./components/patterns/hero": "./components/patterns/hero/index.ts",
+    "./test_components/*": "./test_components/*"
+  }
+}

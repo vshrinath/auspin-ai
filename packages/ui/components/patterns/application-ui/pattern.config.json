@@ -1,0 +1,38 @@
+{
+  "section": "application-ui",
+  "components": [
+    {
+      "componentName": "ApplicationUiDescriptionListInCard",
+      "variant": "Simple Description List",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/application-ui/ApplicationUiDescriptionListInCard.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "ApplicationUiDescriptionListWithAvatar",
+      "variant": "Simple Description List",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/application-ui/ApplicationUiDescriptionListWithAvatar.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "ApplicationUiSimpleDescriptionList",
+      "variant": "Simple Description List",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/application-ui/ApplicationUiSimpleDescriptionList.tsx",
+      "framework": "agnostic"
+    },
+    {
+      "componentName": "ApplicationUiSimpleDescriptionListV2",
+      "variant": "Simple Description List",
+      "source": "Tailwind UI",
+      "path": "packages/ui/components/patterns/application-ui/ApplicationUiSimpleDescriptionListV2.tsx",
+      "framework": "agnostic"
+    }
+  ],
+  "metadata": {
+    "created": "2025-11-04T08:54:11.235Z",
+    "lastUpdated": "2025-11-04T08:55:42.652Z",
+    "version": "1.0.0"
+  }
+}
