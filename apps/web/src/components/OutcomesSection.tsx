@@ -57,24 +57,13 @@ export function OutcomesSection() {
             ))}
           </dl>
           
-          <div className="mt-16 text-center">
-            <p className="text-sm text-gray-500 mb-8">
-              Case evidence available under NDA.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="#contact"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Start Your Transformation
-              </a>
-              <a 
-                href="#team" 
-                className="rounded-md px-3.5 py-2.5 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-              >
-                Meet the Team
-              </a>
-            </div>
+          <div className="mt-12 text-center">
+            <a
+              href="#contact"
+              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >
+              Start Your Transformation
+            </a>
           </div>
         </div>
       </div>
