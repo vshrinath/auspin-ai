@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AUSPIN Ventures - Polished One-Page Site
 
-## Getting Started
+A modern, polished one-page website for AUSPIN Ventures built with Next.js and Tailwind CSS, showcasing their AI strategic execution services.
 
-First, run the development server:
+## Features
+
+- **Modern Hero Section** - Compelling value proposition with smooth navigation
+- **Problem Statement** - Clear articulation of the "Pilot Purgatory" challenge
+- **Services Overview** - Complete execution cycle from strategy to scaling
+- **Method Showcase** - Sprint-based approach with proven frameworks
+- **Deliverables** - Board-ready outcomes and tangible results
+- **Team Profiles** - Practitioner-led expertise and credentials
+- **Contact Form** - Lead generation with regional focus
+- **Responsive Design** - Mobile-first, works on all devices
+- **Static Generation** - Perfect for Cloudflare Pages hosting
+
+## Technology Stack
+
+- **Next.js 16** - React framework with static generation
+- **Tailwind CSS** - Utility-first CSS framework
+- **TypeScript** - Type-safe development
+- **Responsive Design** - Mobile-first approach
+
+## Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment to Cloudflare Pages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Build the site:**
+   ```bash
+   npm run build
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Deploy to Cloudflare Pages:**
+   - Connect your repository to Cloudflare Pages
+   - Set build command: `npm run build`
+   - Set build output directory: `out` (if using static export) or `.next` (for standard build)
+   - Deploy!
 
-## Learn More
+## Content Structure
 
-To learn more about Next.js, take a look at the following resources:
+The site follows the original content structure from your Astro/MDX files:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Hero** - Strategic execution partner positioning
+2. **Problem** - Pilot Purgatory and enterprise AI failure loop
+3. **Services** - Full execution cycle coverage
+4. **Method** - Sprint-based frameworks and approach
+5. **Outcomes** - Board-ready deliverables
+6. **Team** - Practitioner advantage and expertise
+7. **Contact** - Regional focus and lead generation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Customization
 
-## Deploy on Vercel
+- Update content in `/src/components/` files
+- Modify styling in Tailwind classes
+- Add team photos to `/public/team/` directory
+- Update metadata in `/src/app/layout.tsx`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Performance
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Static generation for fast loading
+- Optimized images and assets
+- Mobile-first responsive design
+- SEO-friendly structure and metadata

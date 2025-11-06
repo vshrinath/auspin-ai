@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:static": "next build && next export",
     "start": "next start",
+    "serve": "node serve-static.js",
     "lint": "eslint .",
     "test": "vitest",
     "storybook": "storybook dev -p 6006",

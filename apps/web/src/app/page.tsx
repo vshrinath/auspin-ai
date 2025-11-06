@@ -1,14 +1,39 @@
-export default function Home() {
+/**
+ * AUSPIN Ventures - AI Strategic Execution Partner
+ * Polished one-page site using Tailwind CSS
+ */
+
+import { AuspinHero } from "../components/AuspinHero";
+import { ProblemSection } from "../components/ProblemSection";
+import { ServicesSection } from "../components/ServicesSection";
+import { MethodSection } from "../components/MethodSection";
+import { OutcomesSection } from "../components/OutcomesSection";
+import { AuspinTeamLarge } from "../components/AuspinTeamLarge";
+import { AuspinContact } from "../components/AuspinContact";
+
+export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gray-100 text-gray-800">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 text-blue-600">
-          🚀 Salient Platform is Live
-        </h1>
-        <p className="text-lg text-gray-600">
-          Next.js + Tailwind v4 setup is working perfectly.
-        </p>
-      </div>
+    <main className="bg-white">
+      {/* Hero Section */}
+      <AuspinHero />
+      
+      {/* Problem Section */}
+      <ProblemSection />
+      
+      {/* Services Section */}
+      <ServicesSection />
+      
+      {/* Method Section */}
+      <MethodSection />
+      
+      {/* Outcomes Section */}
+      <OutcomesSection />
+      
+      {/* Team Section */}
+      <AuspinTeamLarge />
+      
+      {/* Contact Section */}
+      <AuspinContact />
     </main>
   );
 }

@@ -1,0 +1,272 @@
+---
+import "../styles/tailwind.css";
+export const prerender = true;
+const siteUrl  = "https://www.auspinventures.com";
+const siteName = "AUSPIN Ventures";
+---
+
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AUSPIN Ventures — Strategic AI Execution Partner</title>
+    <meta
+      name="description"
+      content="Stop joining the 95%. Bridge the GenAI divide with sprints, governance, and ROI-first execution across India, SE Asia, and the Middle East."
+    />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="AUSPIN Ventures — Strategic AI Execution Partner" />
+    <meta property="og:description" content="Stop joining the 95%. Bridge the GenAI divide with sprints, governance, and ROI-first execution across India, SE Asia, and the Middle East." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:image" content={`${siteUrl}/og.jpg`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AUSPIN Ventures — Strategic AI Execution Partner" />
+    <meta name="twitter:description" content="Stop joining the 95%. Bridge the GenAI divide with sprints, governance, and ROI-first execution." />
+    <meta name="twitter:image" content={`${siteUrl}/og.jpg`} />
+
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@type":"Organization",
+        "name":"AUSPIN Ventures",
+        "url":"https://www.auspinventures.com/",
+        "logo":"https://www.auspinventures.com/logo.png",
+        "areaServed":["India","Southeast Asia","Middle East"],
+        "founder":[
+          {"@type":"Person","name":"Shrinath V","jobTitle":"Strategic Advisor"},
+          {"@type":"Person","name":"Mintoo Kakati","jobTitle":"Senior Advisor"},
+          {"@type":"Person","name":"Padmanabhan (NP) Menon","jobTitle":"Managing Partner"},
+          {"@type":"Person","name":"Ramesh Srinivasan","jobTitle":"Senior Advisor"}
+        ],
+        "makesOffer":[
+          {
+            "@type":"Offer",
+            "itemOffered":{
+              "@type":"Service",
+              "name":"AI Alignment Sprint",
+              "areaServed":["India","Southeast Asia","Middle East"],
+              "description":"2-day senior alignment to define ambition, metrics, and execution path."
+            }
+          },
+          {
+            "@type":"Offer",
+            "itemOffered":{
+              "@type":"Service",
+              "name":"AI Feasibility Sprint",
+              "description":"3-week feasibility, build-vs-buy, cost & value model, governance guardrails."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body class="antialiased text-neutral-900 bg-white">
+    <!-- Header -->
+    <header class="fixed top-0 inset-x-0 z-50 bg-white/80 backdrop-blur border-b">
+      <nav class="mx-auto max-w-6xl flex items-center justify-between px-4 py-3">
+        <a href="#home" class="flex items-center gap-2">
+          <img src="/logo.svg" alt="AUSPIN Ventures" class="h-6 w-auto" />
+          <span class="sr-only">{siteName}</span>
+        </a>
+        <ul class="hidden md:flex items-center gap-6 text-sm">
+          <li><a href="#problem"  class="hover:underline">Problem</a></li>
+          <li><a href="#services" class="hover:underline">Services</a></li>
+          <li><a href="#method"   class="hover:underline">Method</a></li>
+          <li><a href="#outcomes" class="hover:underline">Outcomes</a></li>
+          <li><a href="#team"     class="hover:underline">Team</a></li>
+          <li><a href="#contact"  class="hover:underline">Contact</a></li>
+        </ul>
+        <a href="#contact" class="hidden md:inline-block rounded-lg px-4 py-2 border hover:bg-neutral-50">
+          Book Alignment Sprint
+        </a>
+      </nav>
+    </header>
+
+    <main id="home" class="pt-24">
+      <!-- HERO -->
+      <section class="section-lg">
+        <p class="uppercase tracking-widest text-xs">Strategic Execution Partner</p>
+        <h1 class="mt-3 text-4xl md:text-5xl font-semibold">
+          Stop joining the <span class="text-primary-500">95%</span> with zero ROI.
+        </h1>
+        <p class="mt-4 max-w-2xl text-neutral-700">
+          We bridge the gap between wasteful pilots and results—fast, governed, and financially sound.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#contact" class="btn-primary">Book Alignment Sprint</a>
+          <a href="#method" class="btn-outline">See the Playbook</a>
+        </div>
+        <p class="mt-6 text-xs text-neutral-500">
+          Built on Big Tech scale experience and global advisory work—combining Silicon Valley playbooks with India’s rapid-innovation muscle.
+        </p>
+      </section>
+
+      <!-- PROBLEM -->
+      <section id="problem" class="section border-t">
+        <h2 class="text-2xl font-semibold">Pilot Purgatory is the Enterprise AI Failure Loop</h2>
+        <p class="mt-3 text-neutral-700">Less than 30% of enterprise AI use cases scale beyond pilots.</p>
+        <ul class="mt-6 grid md:grid-cols-2 gap-4 list-disc pl-5">
+          <li><strong>Unscalable economics</strong> — unclear ROI, rising cost-to-serve.</li>
+          <li><strong>Leadership misalignment</strong> — ambition without shared reality.</li>
+          <li><strong>Messy integration</strong> — brittle data plumbing & legacy workflows.</li>
+          <li><strong>Governance gaps</strong> — risk, policy, and reputation exposure.</li>
+        </ul>
+        <p class="mt-4 text-sm text-neutral-700">We exist to fix these four—systematically.</p>
+      </section>
+
+      <!-- SERVICES -->
+      <section id="services" class="section border-t">
+        <h2 class="text-2xl font-semibold">The Full Execution Cycle</h2>
+        <p class="mt-3 text-neutral-700">We cover the path from ambition to rollout—so approved pilots actually reach production.</p>
+        <div class="mt-6 grid md:grid-cols-3 gap-6 text-sm">
+          <div><h3 class="font-medium">AI Strategy & Ambition</h3><p>Define ambition, maturity, and a board-ready narrative.</p></div>
+          <div><h3 class="font-medium">Use-Case Prioritization</h3><p>Fund the right bets by ROI, feasibility, and change readiness.</p></div>
+          <div><h3 class="font-medium">Data & System Design</h3><p>Architecture, data quality, and seamless workflow integration.</p></div>
+          <div><h3 class="font-medium">ROI, Risk & Governance</h3><p>Value modeling and guardrails to protect P&amp;L and brand.</p></div>
+          <div><h3 class="font-medium">Scaling Initiatives</h3><p>From pilot to enterprise rollout with adoption playbooks.</p></div>
+          <div><h3 class="font-medium">Capability Building</h3><p>Leader/team fluency and operating cadences.</p></div>
+        </div>
+        <div class="mt-6">
+          <a href="#outcomes" class="inline-flex items-center gap-2 text-sm font-medium text-primary-600 hover:underline">
+            Map your use-case portfolio →
+          </a>
+        </div>
+      </section>
+
+      <!-- METHOD -->
+      <section id="method" class="section border-t">
+        <h2 class="text-2xl font-semibold">Sprints & Frameworks</h2>
+        <p class="mt-3 text-neutral-700">Speed with rigor. Time-boxed sprints. Repeatable outcomes.</p>
+        <ol class="mt-6 space-y-4 text-sm">
+          <li><strong>Alignment Sprint (2 days)</strong> — shared context, north-star, ambition story.</li>
+          <li><strong>Feasibility Sprint (3 weeks)</strong> — readiness, build-vs-buy, cost &amp; value model.</li>
+          <li><strong>Commitment Review (2 hours)</strong> — select 2–3 fundable pilots and lock scope.</li>
+          <li><strong>Scaling Sprint (30–90 days)</strong> — validate outcomes and design for rollout.</li>
+        </ol>
+        <p class="mt-4 text-xs text-neutral-500">Systems Thinking • Design Thinking • Jobs To Be Done • Lean Startup • Responsible AI</p>
+        <div class="mt-6">
+          <a href="#contact" class="inline-flex items-center gap-2 text-sm font-medium text-primary-600 hover:underline">
+            Request Sprint schedule →
+          </a>
+        </div>
+      </section>
+
+      <!-- OUTCOMES -->
+      <section id="outcomes" class="section border-t">
+        <h2 class="text-2xl font-semibold">Board-Ready Deliverables</h2>
+        <ul class="mt-6 grid md:grid-cols-2 gap-4 text-sm">
+          <li><strong>Ambition Pack</strong> — narrative, capability heatmap, board alignment.</li>
+          <li><strong>Use-Case Portfolio</strong> — prioritized pilots with ROI &amp; feasibility.</li>
+          <li><strong>Systems Blueprint</strong> — data + architecture + workflow plan.</li>
+          <li><strong>Value &amp; Risk Model</strong> — ROI, cost-to-serve, governance.</li>
+          <li class="md:col-span-2"><strong>Scaling Playbook</strong> — phased rollout &amp; change adoption.</li>
+        </ul>
+        <p class="mt-4 text-xs text-neutral-500">Case evidence available under NDA.</p>
+      </section>
+
+      <!-- TEAM -->
+      <section id="team" class="section border-t">
+        <h2 class="text-2xl font-semibold">Practitioner Advantage</h2>
+        <p class="mt-3 text-neutral-700">Practitioner-led, not slide-led. You work directly with leaders who’ve shipped at scale.</p>
+
+        <div class="mt-8 grid md:grid-cols-2 gap-8">
+          <!-- Shrinath -->
+          <article class="flex items-start gap-4">
+            <img src="/team/shrinath.jpg" alt="Shrinath V" class="h-16 w-16 rounded-full object-cover" />
+            <div class="text-sm">
+              <h3 class="text-base font-semibold">Shrinath V — Strategic Advisor & Systems Leader</h3>
+              <p class="mt-1">
+                20+ years across product innovation and organizational transformation.
+                Anchor mentor with Google for Startups (10+ years, 100+ founders across 5 continents).
+                Systems thinker aligning business, design, and technology to surface hidden interdependencies.
+              </p>
+            </div>
+          </article>
+
+          <!-- Mintoo -->
+          <article class="flex items-start gap-4">
+            <img src="/team/mintoo.jpg" alt="Mintoo Kakati" class="h-16 w-16 rounded-full object-cover" />
+            <div class="text-sm">
+              <h3 class="text-base font-semibold">Mintoo Kakati — Big Tech Scaling Expert & Innovator</h3>
+              <p class="mt-1">
+                12 years at Amazon; $2B+ in realized business value; 3 AI systems patents; launches at 100M+ weekly actives.
+                Crafts Amazon-grade strategy & execution plans that align CXOs and teams.
+              </p>
+            </div>
+          </article>
+
+          <!-- NP Menon -->
+          <article class="flex items-start gap-4">
+            <img src="/team/np-menon.jpg" alt="Padmanabhan (NP) Menon" class="h-16 w-16 rounded-full object-cover" />
+            <div class="text-sm">
+              <h3 class="text-base font-semibold">Padmanabhan (NP) Menon — Managing Partner, AUSPIN Ventures</h3>
+              <p class="mt-1">
+                30+ years across innovation, strategy, and market expansion. Leads strategic initiatives and corporate governance at Bahwan CyberTek,
+                steering AI-led transformation and sustainability programs across India, the Middle East, and Southeast Asia. Founder of Confianzys Consulting;
+                deep expertise in AI, digital CX, enterprise data, and cloud transformation across BFSI, energy, logistics, healthcare, and government.
+              </p>
+            </div>
+          </article>
+
+          <!-- Ramesh Srinivasan -->
+          <article class="flex items-start gap-4">
+            <img src="/team/ramesh-srinivasan.jpg" alt="Ramesh Srinivasan" class="h-16 w-16 rounded-full object-cover" />
+            <div class="text-sm">
+              <h3 class="text-base font-semibold">Ramesh Srinivasan — Senior Advisor, Leadership & Systems Design</h3>
+              <p class="mt-1">
+                Leadership coach, educator, and systems consultant with 4,000+ coaching hours for 125+ senior leaders across India, SE Asia, and the Middle East.
+                Former Head of Operations at HCL Technologies (Singapore); founder of i.e. Consulting advising Oracle, HP, Honeywell, D.E. Shaw.
+                Faculty at IIM Bangalore and IIM Udaipur on technology-product strategy, negotiation, and organizational performance.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="mt-6">
+          <a href="#contact" class="inline-flex items-center gap-2 text-sm font-medium text-primary-600 hover:underline">
+            Request full bios under NDA →
+          </a>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="mx-auto max-w-3xl px-4 py-16 border-t">
+        <h2 class="text-2xl font-semibold">Let’s De-risk Your AI Execution</h2>
+        <p class="mt-2 text-neutral-700">Primary markets: <strong>India</strong> • <strong>Southeast Asia</strong> • <strong>Middle East</strong></p>
+        <p class="mt-1 text-neutral-700">Start with a 2-day Alignment Sprint or a 3-week Feasibility Sprint.</p>
+
+        <!-- Netlify Forms example (swap for your provider if needed) -->
+        <form name="contact" method="POST" data-netlify="true" class="mt-6 grid gap-4">
+          <input type="hidden" name="form-name" value="contact" />
+          <input class="border rounded p-3" placeholder="Name *" name="name" required />
+          <input class="border rounded p-3" placeholder="Work Email *" name="email" type="email" required />
+          <input class="border rounded p-3" placeholder="Company & Role" name="companyRole" />
+          <input class="border rounded p-3" placeholder="Region (India / SE Asia / Middle East)" name="region" />
+          <textarea class="border rounded p-3" placeholder="What outcome do you need in 90 days?" name="outcome"></textarea>
+          <div class="flex gap-3">
+            <button class="btn-primary" type="submit">Book Alignment Sprint</button>
+            <a href="mailto:hello@auspinventures.com" class="btn-outline">Ask a Question</a>
+          </div>
+        </form>
+
+        <p class="mt-6 text-xs text-neutral-500">Case evidence available under NDA. © AUSPIN Ventures</p>
+      </section>
+    </main>
+
+    <footer class="border-t">
+      <div class="mx-auto max-w-6xl px-4 py-8 text-sm flex flex-wrap items-center justify-between gap-4">
+        <p>© AUSPIN Ventures</p>
+        <nav class="flex gap-4 text-neutral-500">
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

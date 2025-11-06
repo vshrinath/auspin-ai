@@ -1,0 +1,10 @@
+# Cloudflare Pages configuration for AUSPIN Ventures
+
+name = "auspin-ventures"
+compatibility_date = "2024-11-05"
+
+[env.production]
+name = "auspin-ventures"
+
+[env.preview]
+name = "auspin-ventures-preview"
