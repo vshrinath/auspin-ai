@@ -16,22 +16,27 @@ export default function HomePage() {
     <main className="bg-white">
       {/* Hero Section */}
       <AuspinHero />
-      
+
       {/* Problem Section */}
       <ProblemSection />
-      
+
       {/* Services Section */}
       <ServicesSection />
-      
+
       {/* Method Section */}
       <MethodSection />
-      
+
       {/* Outcomes Section */}
       <OutcomesSection />
-      
+
+      {/* Light Divider */}
+      <div className="flex justify-center py-8">
+        <div className="w-1/2 border-t border-gray-200"></div>
+      </div>
+
       {/* Team Section */}
       <AuspinTeamLarge />
-      
+
       {/* Contact Section */}
       <AuspinContact />
     </main>
