@@ -9,7 +9,7 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{js,ts,tsx,json,css,md}\"",
     "clean": "rm -rf node_modules .turbo apps/**/node_modules",
-    "prepare": "husky install",
+    "prepare": "husky install || true",
     "setup": "./scripts/setup-env.sh",
     "tailwind:init": "(cd apps/web && node ../../node_modules/tailwindcss/lib/cli.js init -p) || node ./node_modules/tailwindcss/lib/cli.js init -p"
   },
