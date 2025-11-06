@@ -20,7 +20,7 @@ export function AuspinHero() {
 
   return (
     <div className="bg-white">
-      <header className="absolute inset-x-0 top-0 z-50">
+      <header className="fixed inset-x-0 top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
         <nav
           aria-label="Global"
           className="flex items-center justify-between p-6 lg:px-8"
@@ -138,7 +138,7 @@ export function AuspinHero() {
 
           <div className="text-center">
             <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
-              From pilot to production to <span className="text-indigo-600">profit</span>.
+              From pilot to production to <span className="text-indigo-600">profit</span>
             </h1>
             <p className="mt-8 text-lg font-medium text-pretty text-gray-600 sm:text-xl leading-8">
               We solve the economics, alignment, integration, and governance gaps that doom AI initiatives.
