@@ -30,7 +30,7 @@ export function OutcomesSection() {
   return (
     <div id="outcomes" className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
+        <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">
             Tangible Results
           </h2>
@@ -47,7 +47,7 @@ export function OutcomesSection() {
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
             {deliverables.map((deliverable) => (
               <div key={deliverable.name} className="relative pl-16">
-                <dt className="text-base font-semibold leading-7 text-gray-900">
+                <dt className="text-lg sm:text-base font-semibold leading-7 text-gray-900">
                   <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                     <svg
                       className="h-6 w-6 text-white"

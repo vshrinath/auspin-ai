@@ -52,7 +52,7 @@ export function ServicesSection() {
   return (
     <div id="services" className="bg-white py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
+        <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">
             How We Help
           </h2>
