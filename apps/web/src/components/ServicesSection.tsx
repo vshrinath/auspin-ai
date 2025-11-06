@@ -6,37 +6,37 @@
 const services = [
   {
     name: 'AI Strategy & Ambition',
-    description: 'Define ambition, maturity, and a board-ready narrative.',
+    description: 'We help you articulate a clear AI vision that aligns with your business goals. From defining realistic outcomes to creating compelling board presentations, we ensure your AI strategy drives measurable business value rather than just technological novelty.',
     href: '#outcomes',
     icon: '💡',
   },
   {
     name: 'Use-Case Prioritization',
-    description: 'Fund the right bets by ROI, feasibility, and change readiness.',
+    description: 'Not all AI opportunities are created equal. We evaluate your potential use cases through a business lens—analyzing ROI potential, implementation complexity, and organizational readiness—so you invest in initiatives that actually move the needle.',
     href: '#outcomes',
     icon: '📋',
   },
   {
     name: 'Data & System Design',
-    description: 'Architecture, data quality, and seamless workflow integration.',
+    description: 'AI is only as good as the data and systems that support it. We design the technical foundation that makes AI work reliably in your real business environment—no more pilots that break when they meet actual operations.',
     href: '#outcomes',
     icon: '🔧',
   },
   {
     name: 'ROI, Risk & Governance',
-    description: 'Value modeling and guardrails to protect P&L and brand.',
+    description: 'Make AI investments with confidence. We build comprehensive ROI models and risk frameworks that protect your bottom line and reputation while ensuring compliance with evolving AI regulations and industry standards.',
     href: '#outcomes',
     icon: '🛡️',
   },
   {
     name: 'Scaling Initiatives',
-    description: 'From pilot to enterprise rollout with adoption playbooks.',
+    description: 'Turn successful pilots into enterprise-wide transformation. We create detailed rollout strategies and change management playbooks that ensure AI adoption happens smoothly across your organization, not just in isolated pockets.',
     href: '#outcomes',
     icon: '🚀',
   },
   {
     name: 'Capability Building',
-    description: 'Leader/team fluency and operating cadences.',
+    description: 'Build internal AI expertise that lasts beyond consultants. We develop your leadership team\'s AI fluency and establish sustainable operating rhythms, ensuring your organization can continue driving AI success long after our engagement ends.',
     href: '#outcomes',
     icon: '🎓',
   },
@@ -44,10 +44,10 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <div id="services" className="bg-white py-24 sm:py-32">
+    <div id="services" className="bg-white py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">Complete Coverage</h2>
+          <h2 className="text-base font-semibold leading-7 text-indigo-600">How We Help</h2>
           <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
             The Full Execution Cycle
           </p>
@@ -59,17 +59,12 @@ export function ServicesSection() {
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {services.map((service) => (
               <div key={service.name} className="flex flex-col">
-                <dt className="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+                <dt className="flex items-center gap-x-3 text-lg font-semibold leading-7 text-gray-900">
                   <span className="text-2xl" aria-hidden="true">{service.icon}</span>
                   {service.name}
                 </dt>
                 <dd className="mt-4 flex flex-auto flex-col text-base leading-7 text-gray-600">
                   <p className="flex-auto">{service.description}</p>
-                  <p className="mt-6">
-                    <a href={service.href} className="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
-                      Learn more <span aria-hidden="true">→</span>
-                    </a>
-                  </p>
                 </dd>
               </div>
             ))}

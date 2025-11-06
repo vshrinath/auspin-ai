@@ -5,26 +5,26 @@
 
 export function ProblemSection() {
   const problems = [
-    'Unscalable economics',
-    'Leadership misalignment', 
+    'Leadership misalignment',
+    'Governance gaps', 
     'Messy integration',
-    'Governance gaps'
+    'Unscalable economics'
   ];
 
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-gradient-to-br from-red-50 to-orange-50 py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center mb-16">
+        <div className="mx-auto max-w-2xl text-center mb-16">
           <h2 className="text-base font-semibold leading-7 text-red-600">The Reality Check</h2>
           <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-            Pilot Purgatory is the Enterprise AI Failure Loop
+            The Enterprise AI Death Spiral
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left side - Infographic */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 border border-red-100">
+            <div className="bg-white rounded-2xl p-8 border border-red-100 shadow-sm">
               {/* 95% Failure Rate Visual */}
               <div className="text-center mb-8">
                 <div className="text-6xl font-bold text-red-600 mb-2">95%</div>
@@ -86,22 +86,25 @@ export function ProblemSection() {
                   <div>
                     <h4 className="text-lg font-semibold text-gray-900">{problem}</h4>
                     <p className="text-gray-600 mt-1">
-                      {index === 0 && "Unclear ROI and rising cost-to-serve make scaling impossible"}
-                      {index === 1 && "Ambition without shared reality leads to misaligned expectations"}
+                      {index === 0 && "Ambition without shared reality leads to misaligned expectations"}
+                      {index === 1 && "Risk, policy, and reputation exposure create insurmountable barriers"}
                       {index === 2 && "Brittle data plumbing and legacy workflows break under pressure"}
-                      {index === 3 && "Risk, policy, and reputation exposure create insurmountable barriers"}
+                      {index === 3 && "Unclear ROI and rising cost-to-serve make scaling impossible"}
                     </p>
                   </div>
                 </div>
               ))}
             </div>
             
-            <div className="mt-8 p-4 bg-gray-50 rounded-lg">
-              <p className="text-sm text-gray-700">
-                <strong>We exist to fix these four—systematically.</strong>
-              </p>
-            </div>
+
           </div>
+        </div>
+        
+        {/* Bottom Message - Center Aligned */}
+        <div className="mt-16 text-center">
+          <p className="text-lg font-semibold text-indigo-600">
+            We exist to fix these four—systematically.
+          </p>
         </div>
       </div>
     </div>
