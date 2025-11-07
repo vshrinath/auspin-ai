@@ -3,51 +3,22 @@
  * Using StatsTimeline component for process flow
  */
 
-const timeline = [
-  {
-    name: "Alignment Sprint",
-    description:
-      "Establish shared context, define north-star vision, and create compelling ambition story that aligns leadership and stakeholders.",
-    duration: "2 days",
-    dateTime: "step-1",
-  },
-  {
-    name: "Feasibility Sprint",
-    description:
-      "Assess organizational readiness, evaluate build-vs-buy options, and develop comprehensive cost & value models.",
-    duration: "3 weeks",
-    dateTime: "step-2",
-  },
-  {
-    name: "Commitment Review",
-    description:
-      "Select 2–3 fundable pilots based on ROI analysis, lock scope and resources, and secure executive commitment.",
-    duration: "2 hours",
-    dateTime: "step-3",
-  },
-  {
-    name: "Scaling Sprint",
-    description:
-      "Validate pilot outcomes, design enterprise rollout strategy, and establish change management playbooks.",
-    duration: "30–90 days",
-    dateTime: "step-4",
-  },
-];
+import { getContentData, parseMethodContent } from "../lib/content";
 
 export function MethodSection() {
+  const methodData = getContentData("method");
+  const timeline = parseMethodContent(methodData.content);
   return (
     <div id="method" className="bg-gray-50 py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">
-            Our Methodology
+            {methodData.subtitle}
           </h2>
           <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-            Sprints & Frameworks
+            {methodData.title}
           </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Speed with rigor. Time-boxed sprints. Repeatable outcomes.
-          </p>
+          <p className="mt-6 text-lg leading-8 text-gray-600">{methodData.description}</p>
         </div>
 
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden lg:mx-0 lg:max-w-none lg:grid-cols-4">

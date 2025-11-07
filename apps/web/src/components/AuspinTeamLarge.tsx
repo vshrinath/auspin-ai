@@ -3,66 +3,22 @@
  * Based on Salient TeamLargeGridWithCards format
  */
 
-const coreTeam = [
-  {
-    name: "Shrinath V",
-    role: "Strategic Advisor & Systems Leader",
-    bio: "20+ years across product innovation and organizational transformation. Anchor mentor with Google for Startups (10+ years, 100+ founders across 5 continents). Systems thinker aligning business, design, and technology to surface hidden interdependencies.",
-    imageUrl: "/team/shrinath.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/shrinathv",
-    order: 1,
-  },
-  {
-    name: "Mintoo Kakati",
-    role: "Big Tech Scaling Expert & Innovator",
-    bio: "12 years at Amazon; $2B+ in realized business value; 3 AI systems patents; launches at 100M+ weekly actives. Crafts Amazon-grade strategy & execution plans that align CXOs and teams.",
-    imageUrl: "/team/mintoo.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/mintookakati/",
-    order: 2,
-  },
-  {
-    name: "Ashish Gulati",
-    role: "Data & AI Systems Architect",
-    bio: "15+ years in AI, data science, and cloud architecture across the Python ecosystem. Certified AWS Architect specializing in Machine Learning and Generative AI. Led technical transformations at Tower Research Capital, Flipkart, and Dell with 10,000+ training hours delivered.",
-    imageUrl: "/team/ashish-gulati-v2.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/ashishgulati/",
-    order: 3,
-  },
-];
-
-const advisors = [
-  {
-    name: "Padmanabhan (NP) Menon",
-    role: "Managing Partner, AUSPIN Ventures",
-    bio: "30+ years across innovation, strategy, and market expansion. Leads strategic initiatives and corporate governance at Bahwan CyberTek, steering AI-led transformation and sustainability programs across India, the Middle East, and Southeast Asia.",
-    imageUrl: "/team/np-menon-v2.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/padmanabhan-menon-8192224/",
-    order: 4,
-  },
-  {
-    name: "Ramesh Srinivasan",
-    role: "Senior Advisor, Leadership & Systems Design",
-    bio: "Leadership coach, educator, and systems consultant with 4,000+ coaching hours for 125+ senior leaders across India, SE Asia, and the Middle East. Former Head of Operations at HCL Technologies (Singapore); founder of i.e. Consulting.",
-    imageUrl: "/team/ramesh-srinivasan.jpg",
-    linkedinUrl: "https://www.linkedin.com/in/rameshie/",
-    order: 5,
-  },
-];
+import { getContentData, parseTeamContent } from "../lib/content";
 
 export function AuspinTeamLarge() {
+  const teamData = getContentData("team");
+  const { coreTeam, advisors } = parseTeamContent(teamData.content);
   return (
     <div id="team" className="bg-white py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
         <div className="mx-auto max-w-2xl">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">Our Team</h2>
+          <h2 className="text-base font-semibold leading-7 text-indigo-600">
+            {teamData.subtitle}
+          </h2>
           <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-            The Practitioner Advantage
+            {teamData.title}
           </p>
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            Direct access to practitioners. No intermediaries, no junior consultants—just
-            leaders who built and scaled AI at Amazon and coached leaders at global
-            enterprises.
-          </p>
+          <p className="mt-6 text-lg leading-8 text-gray-600">{teamData.description}</p>
         </div>
         <ul
           role="list"

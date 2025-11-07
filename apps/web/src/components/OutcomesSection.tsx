@@ -3,43 +3,23 @@
  * Clean deliverables showcase
  */
 
-const deliverables = [
-  {
-    name: "Ambition Pack",
-    description: "narrative, capability heatmap, board alignment.",
-  },
-  {
-    name: "Use-Case Portfolio",
-    description: "prioritized pilots with ROI & feasibility.",
-  },
-  {
-    name: "Systems Blueprint",
-    description: "data + architecture + workflow plan.",
-  },
-  {
-    name: "Value & Risk Model",
-    description: "ROI, cost-to-serve, governance.",
-  },
-  {
-    name: "Scaling Playbook",
-    description: "phased rollout & change adoption.",
-  },
-];
+import { getContentData, parseOutcomesContent } from "../lib/content";
 
 export function OutcomesSection() {
+  const outcomesData = getContentData("outcomes");
+  const deliverables = parseOutcomesContent(outcomesData.content);
   return (
     <div id="outcomes" className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">
-            Tangible Results
+            {outcomesData.subtitle}
           </h2>
           <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-            Board-Ready Deliverables
+            {outcomesData.title}
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Every engagement produces concrete, actionable deliverables that drive your AI
-            transformation forward.
+            {outcomesData.description}
           </p>
         </div>
 
