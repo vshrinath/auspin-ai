@@ -1,6 +1,6 @@
 ---
 section: "problem"
-title: "The Enterprise AI Death Spiral"
+title: "The Enterprise AI Quagmire"
 subtitle: "The Reality Check"
 failureRate: "95%"
 failureText: "of AI pilots fail"

@@ -22,7 +22,7 @@ export function AuspinTeamLarge() {
         </div>
         <ul
           role="list"
-          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
+          className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-auto lg:max-w-4xl lg:gap-8 justify-center"
         >
           {coreTeam
             .sort((a, b) => a.order - b.order)
@@ -78,7 +78,7 @@ export function AuspinTeamLarge() {
           </h3>
           <ul
             role="list"
-            className="mx-auto grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-auto lg:max-w-4xl lg:gap-8 justify-center"
+            className="mx-auto grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
           >
             {advisors
               .sort((a, b) => a.order - b.order)
