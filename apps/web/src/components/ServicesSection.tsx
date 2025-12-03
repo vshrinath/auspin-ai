@@ -9,7 +9,7 @@ export function ServicesSection() {
   const servicesData = getContentData("services");
   const services = parseServicesContent(servicesData.content);
   return (
-    <div id="services" className="bg-white py-16 sm:py-20">
+    <div id="services" className="bg-gray-50 py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-base font-semibold leading-7 text-indigo-600">

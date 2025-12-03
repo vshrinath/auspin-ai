@@ -146,3 +146,55 @@ export function parseOutcomesContent(content: string) {
     };
   });
 }
+
+export function parseCommitmentsContent(content: string) {
+  const commitments = content.split(/^## /m).filter(Boolean).slice(1);
+
+  return commitments.map((commitment) => {
+    const lines = commitment
+      .trim()
+      .split("\n")
+      .filter((line) => line.trim());
+    const name = lines[0].trim();
+    const description = lines.slice(1).join(" ").trim();
+
+    return {
+      name,
+      description,
+    };
+  });
+}
+
+export function parseExecutionContent(content: string) {
+  const stacks = content.split(/^## /m).filter(Boolean).slice(1);
+
+  // Icon mapping for each stack
+  const iconMap: { [key: string]: string } = {
+    "Strategy Stack": "🎯",
+    "Discovery Stack": "🔍",
+    "Delivery Stack": "⚡",
+    "Scale Stack": "🚀",
+    "AI enhanced customer journeys": "🎯",
+    "AI economics & growth models": "📊",
+    "AI Engineering & Ops at scale": "⚙️",
+    "Enterprise-wide AI adoption enablers": "🚀",
+  };
+
+  return stacks.map((stack) => {
+    const lines = stack
+      .trim()
+      .split("\n")
+      .filter((line) => line.trim());
+    const name = lines[0].trim();
+    const deliverables = lines
+      .slice(1)
+      .filter((line) => line.startsWith("-"))
+      .map((line) => line.replace(/^-\s*/, "").trim());
+
+    return {
+      name,
+      icon: iconMap[name] || "📋",
+      deliverables,
+    };
+  });
+}

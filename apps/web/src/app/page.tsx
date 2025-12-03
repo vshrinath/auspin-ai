@@ -5,7 +5,9 @@
 
 import { AuspinHero } from "../components/AuspinHero";
 import { ProblemSection } from "../components/ProblemSection";
+import { CommitmentsSection } from "../components/CommitmentsSection";
 import { ServicesSection } from "../components/ServicesSection";
+import { ExecutionSection } from "../components/ExecutionSection";
 import { MethodSection } from "../components/MethodSection";
 import { OutcomesSection } from "../components/OutcomesSection";
 import { AuspinTeamLarge } from "../components/AuspinTeamLarge";
@@ -20,8 +22,14 @@ export default function HomePage() {
       {/* Problem Section */}
       <ProblemSection />
 
+      {/* Commitments Section */}
+      <CommitmentsSection />
+
       {/* Services Section */}
       <ServicesSection />
+
+      {/* Execution Section */}
+      <ExecutionSection />
 
       {/* Method Section */}
       <MethodSection />
