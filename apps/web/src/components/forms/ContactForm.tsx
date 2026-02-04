@@ -347,19 +347,6 @@ export function ContactForm({
           {isSubmitting ? 'Sending...' : 'Send Message'}
         </Button>
       </div>
-
-      {/* Privacy notice */}
-      <p className="text-xs text-stone-600 text-center">
-        By submitting this form, you agree to our{' '}
-        <a href="/privacy" className="text-deep-teal hover:text-gold underline">
-          Privacy Policy
-        </a>
-        {' '}and{' '}
-        <a href="/terms" className="text-deep-teal hover:text-gold underline">
-          Terms of Service
-        </a>
-        .
-      </p>
     </form>
   );
 }

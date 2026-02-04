@@ -70,7 +70,7 @@ export function HeroSection() {
           
           {/* Trust Badges - Requirement 1.4 */}
           <div 
-            className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12 pt-8 md:pt-12"
+            className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12 pt-8 md:pt-12"
             role="list"
             aria-label="Trust indicators"
           >
@@ -80,19 +80,19 @@ export function HeroSection() {
               return (
                 <div 
                   key={index}
-                  className="flex items-center gap-3 text-white"
+                  className="flex flex-col items-center text-center text-white"
                   role="listitem"
                 >
-                  {/* Icon - Hidden on mobile */}
+                  {/* Icon - Center aligned */}
                   {IconComponent && (
                     <IconComponent 
-                      className="hidden md:block w-10 h-10 flex-shrink-0 text-white" 
+                      className="w-10 h-10 md:w-12 md:h-12 mb-2 text-white" 
                       aria-hidden="true"
                     />
                   )}
                   
-                  {/* Badge Text - Center aligned on mobile */}
-                  <div className="flex flex-col items-center md:items-start text-center md:text-left">
+                  {/* Badge Text - Center aligned */}
+                  <div className="flex flex-col items-center">
                     <span className="text-base md:text-lg font-semibold">
                       {badge.text}
                     </span>

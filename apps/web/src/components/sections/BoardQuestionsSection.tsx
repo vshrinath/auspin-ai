@@ -44,20 +44,20 @@ export function BoardQuestionsSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         
         {/* Section Header */}
-        <div className="text-center mb-12 md:mb-16 max-w-3xl mx-auto">
+        <div className="text-center mb-10 md:mb-12 max-w-3xl mx-auto">
           <h2 
             id="board-questions-heading"
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4"
+            className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3"
           >
             {boardQuestionsContent.headline}
           </h2>
-          <p className="text-lg md:text-xl text-gray-600">
+          <p className="text-base md:text-lg text-gray-600">
             {boardQuestionsContent.subheadline}
           </p>
         </div>
 
         {/* Questions Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-10">
           {boardQuestionsContent.questions.map((item, index) => {
             const IconComponent = iconMap[item.icon];
             
@@ -67,10 +67,10 @@ export function BoardQuestionsSection() {
                 className="bg-white border-gray-200 hover:border-teal-300 hover:shadow-lg transition-all duration-300"
               >
                 <CardHeader className="pb-4">
-                  <div className="flex items-start gap-4">
-                    {/* Icon - Hidden on mobile */}
+                  <div className="flex flex-col items-center text-center gap-3">
+                    {/* Icon - Center aligned */}
                     {IconComponent && (
-                      <div className="hidden md:block flex-shrink-0 mt-1">
+                      <div className="flex-shrink-0">
                         <div className="w-12 h-12 rounded-lg bg-teal-50 flex items-center justify-center">
                           <IconComponent 
                             className="w-6 h-6 text-teal-600" 
@@ -81,7 +81,7 @@ export function BoardQuestionsSection() {
                     )}
                     
                     {/* Question */}
-                    <CardTitle className="text-xl md:text-2xl text-gray-900 leading-tight">
+                    <CardTitle className="text-lg md:text-xl text-gray-900 leading-tight">
                       "{item.question}"
                     </CardTitle>
                   </div>
@@ -89,7 +89,7 @@ export function BoardQuestionsSection() {
                 
                 <CardContent className="pt-0">
                   {/* Challenge Description */}
-                  <p className="text-base text-gray-600 leading-relaxed">
+                  <p className="text-sm md:text-base text-gray-600 leading-relaxed text-center">
                     {item.challenge}
                   </p>
                 </CardContent>
@@ -102,11 +102,11 @@ export function BoardQuestionsSection() {
         <div className="text-center">
           <a
             href={boardQuestionsContent.ctaLink}
-            className="inline-flex items-center text-base md:text-lg font-medium text-teal-600 hover:text-teal-700 transition-colors duration-200"
+            className="inline-flex flex-col md:flex-row items-center text-base md:text-lg font-medium text-teal-600 hover:text-teal-700 transition-colors duration-200"
           >
-            {boardQuestionsContent.ctaText}
+            <span>{boardQuestionsContent.ctaText}</span>
             <svg
-              className="ml-2 w-5 h-5"
+              className="mt-2 md:mt-0 md:ml-2 w-5 h-5"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"

@@ -45,20 +45,20 @@ export function ApproachSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         
         {/* Section Header */}
-        <div className="text-center mb-12 md:mb-16 max-w-4xl mx-auto">
+        <div className="text-center mb-10 md:mb-12 max-w-4xl mx-auto">
           <h2 
             id="approach-heading"
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-600 mb-6"
+            className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary-600 mb-4"
           >
             Our Approach Framework
           </h2>
-          <p className="text-lg md:text-xl text-stone-600 leading-relaxed">
+          <p className="text-base md:text-lg text-stone-600 leading-relaxed">
             5 non-negotiable principles for AI success
           </p>
         </div>
 
         {/* Principles - Requirement 4.1, 4.2, 4.3 */}
-        <div className="space-y-8 md:space-y-12">
+        <div className="space-y-6 md:space-y-8">
           {approachContent.principles.map((principle, index) => {
             const IconComponent = iconMap[principle.icon];
             const isEven = index % 2 === 0;
@@ -66,53 +66,67 @@ export function ApproachSection() {
             return (
               <div 
                 key={index}
-                className={`${isEven ? 'bg-stone-50' : 'bg-white'} rounded-lg p-6 md:p-8`}
+                className="rounded-lg overflow-hidden"
               >
-                {/* Card Header with Icon and Title */}
-                <div className="flex items-center gap-4 mb-6 md:mb-8">
-                  {/* Icon - Hidden on mobile */}
-                  {IconComponent && (
-                    <div className="hidden md:block flex-shrink-0">
-                      <div className="w-14 h-14 rounded-lg bg-primary-100 flex items-center justify-center">
-                        <IconComponent 
-                          className="w-8 h-8 text-primary-600" 
-                          aria-hidden="true"
-                        />
+                {/* Mobile: Teal header card */}
+                <div className="md:hidden bg-white border border-stone-200 rounded-lg overflow-hidden">
+                  <div className="bg-teal-700 px-6 py-4">
+                    <h3 className="text-xl font-bold text-white">
+                      {principle.title}
+                    </h3>
+                  </div>
+                  <div className="p-6">
+                    <div className="space-y-6">
+                      <div className="space-y-3">
+                        <div className="flex items-center gap-2">
+                          <span className="text-xl" role="img" aria-label="risk">⚠️</span>
+                          <h4 className="text-lg font-semibold text-red-700">Risk Scenario</h4>
+                        </div>
+                        <p className="text-base text-stone-700 leading-relaxed">{principle.theRisk}</p>
+                      </div>
+                      <div className="space-y-3">
+                        <div className="flex items-center gap-2">
+                          <span className="text-xl" role="img" aria-label="solution">✓</span>
+                          <h4 className="text-lg font-semibold text-green-700">How We Mitigate It</h4>
+                        </div>
+                        <p className="text-base text-stone-700 leading-relaxed">{principle.howWeMitigateIt}</p>
                       </div>
                     </div>
-                  )}
-                  <h3 className="text-2xl md:text-3xl font-bold text-primary-600">
-                    {principle.title}
-                  </h3>
+                  </div>
                 </div>
 
-                {/* Risk and Mitigation Grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
-                  
-                  {/* Risk Scenario Column (Left) */}
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-2">
-                      <span className="text-xl" role="img" aria-label="risk">⚠️</span>
-                      <h4 className="text-lg font-semibold text-red-700">
-                        Risk Scenario
-                      </h4>
-                    </div>
-                    <p className="text-base text-stone-700 leading-relaxed pl-7">
-                      {principle.theRisk}
-                    </p>
+                {/* Desktop: Alternating background with icon+title */}
+                <div className={`hidden md:block ${isEven ? 'bg-stone-50' : 'bg-white'} border border-stone-200 rounded-lg p-8`}>
+                  <div className="flex items-center gap-4 mb-8">
+                    {IconComponent && (
+                      <div className="flex-shrink-0">
+                        <div className="w-14 h-14 rounded-lg bg-primary-100 flex items-center justify-center">
+                          <IconComponent 
+                            className="w-8 h-8 text-primary-600" 
+                            aria-hidden="true"
+                          />
+                        </div>
+                      </div>
+                    )}
+                    <h3 className="text-2xl font-bold text-primary-600">
+                      {principle.title}
+                    </h3>
                   </div>
-
-                  {/* How We Mitigate It Column (Right) */}
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-2">
-                      <span className="text-xl" role="img" aria-label="solution">✓</span>
-                      <h4 className="text-lg font-semibold text-green-700">
-                        How We Mitigate It
-                      </h4>
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-2">
+                        <span className="text-xl" role="img" aria-label="risk">⚠️</span>
+                        <h4 className="text-lg font-semibold text-red-700">Risk Scenario</h4>
+                      </div>
+                      <p className="text-base text-stone-700 leading-relaxed">{principle.theRisk}</p>
                     </div>
-                    <p className="text-base text-stone-700 leading-relaxed pl-7">
-                      {principle.howWeMitigateIt}
-                    </p>
+                    <div className="space-y-3">
+                      <div className="flex items-center gap-2">
+                        <span className="text-xl" role="img" aria-label="solution">✓</span>
+                        <h4 className="text-lg font-semibold text-green-700">How We Mitigate It</h4>
+                      </div>
+                      <p className="text-base text-stone-700 leading-relaxed">{principle.howWeMitigateIt}</p>
+                    </div>
                   </div>
                 </div>
               </div>

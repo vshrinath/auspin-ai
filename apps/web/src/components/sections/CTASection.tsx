@@ -12,8 +12,6 @@ export interface CTASectionProps {
 }
 
 export function CTASection({ preselectedService }: CTASectionProps) {
-  const [downloadingLeadMagnet, setDownloadingLeadMagnet] = useState(false);
-
   // Handle form submission
   const handleFormSubmit = async (data: FormSubmission) => {
     try {
@@ -102,7 +100,7 @@ export function CTASection({ preselectedService }: CTASectionProps) {
         </div>
 
         {/* Contact form card */}
-        <div className="bg-white rounded-2xl shadow-xl p-8 md:p-10 lg:p-12 mb-8">
+        <div className="bg-white rounded-2xl shadow-xl p-8 md:p-10 lg:p-12">
           <ContactForm
             fields={ctaContent.formFields}
             onSubmit={handleFormSubmit}
@@ -110,42 +108,6 @@ export function CTASection({ preselectedService }: CTASectionProps) {
             onError={handleFormError}
             preselectedService={preselectedService}
           />
-        </div>
-
-        {/* Lead magnet CTA */}
-        <div className="text-center">
-          <div className="flex flex-col items-center gap-4">
-            <p className="text-sm text-stone-600">
-              Not ready to book? Start with our free assessment:
-            </p>
-            <Button
-              variant="outline"
-              size="lg"
-              onClick={handleLeadMagnetDownload}
-              loading={downloadingLeadMagnet}
-              disabled={downloadingLeadMagnet}
-              className="group w-full sm:w-auto"
-            >
-              <svg
-                className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                />
-              </svg>
-              {downloadingLeadMagnet ? 'Downloading...' : ctaContent.leadMagnetText}
-            </Button>
-            <p className="text-xs text-stone-500">
-              No email required • Instant download • 15-minute assessment
-            </p>
-          </div>
         </div>
       </div>
     </section>

@@ -64,80 +64,39 @@ export function ServicesSection() {
         </div>
 
         {/* Services Grid - Requirement 5.1, 5.2, 5.3 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {servicesContent.services.map((service, index) => {
             const IconComponent = iconMap[service.icon];
             
             return (
-              <Card 
+              <div 
                 key={index}
-                className="bg-white border-stone-200 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className="group"
               >
-                <CardHeader>
-                  <div className="flex flex-col gap-4">
-                    {/* Icon */}
-                    {IconComponent && (
-                      <div className="flex-shrink-0">
-                        <div className="w-14 h-14 rounded-lg bg-accent/10 flex items-center justify-center">
-                          <IconComponent 
-                            className="w-8 h-8 text-accent" 
-                            aria-hidden="true"
-                          />
-                        </div>
-                      </div>
-                    )}
-                    
-                    {/* Title */}
-                    <CardTitle className="text-xl md:text-2xl text-primary-600">
-                      {service.title}
-                    </CardTitle>
+                {/* Icon */}
+                {IconComponent && (
+                  <div className="mb-4">
+                    <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-colors">
+                      <IconComponent 
+                        className="w-7 h-7 text-white" 
+                        aria-hidden="true"
+                      />
+                    </div>
                   </div>
-                </CardHeader>
+                )}
                 
-                <CardContent className="space-y-6">
-                  {/* The CXO Problem - Requirement 5.2 */}
-                  <div>
-                    <h4 className="text-sm font-semibold text-red-600 uppercase tracking-wide mb-2">
-                      The CXO Problem
-                    </h4>
-                    <p className="text-base text-stone-700 leading-relaxed">
-                      {service.cxoProblem}
-                    </p>
-                  </div>
-                  
-                  {/* What We Deliver - Requirement 5.3 */}
-                  <div>
-                    <h4 className="text-sm font-semibold text-green-600 uppercase tracking-wide mb-3">
-                      What We Deliver
-                    </h4>
-                    <ul className="space-y-2">
-                      {service.deliverables.map((deliverable, idx) => (
-                        <li 
-                          key={idx}
-                          className="flex items-start gap-2 text-sm text-stone-600"
-                        >
-                          <span className="text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true">
-                            ✓
-                          </span>
-                          <span>{deliverable}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
+                {/* Title */}
+                <h3 className="text-xl md:text-2xl font-bold text-white mb-3">
+                  {service.title}
+                </h3>
+                
+                {/* Description */}
+                <p className="text-base text-teal-50 leading-relaxed">
+                  {service.cxoProblem}
+                </p>
+              </div>
             );
           })}
-        </div>
-
-        {/* CTA Button - Requirement 5.4, 5.5 */}
-        <div className="text-center">
-          <a 
-            href={servicesContent.ctaLink}
-            className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-lg font-semibold transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 bg-gold text-white shadow-md hover:bg-gold-600 hover:shadow-lg hover:scale-[1.02] active:scale-[0.98] px-8 py-6 h-12"
-          >
-            {servicesContent.ctaText}
-          </a>
         </div>
       </div>
     </section>

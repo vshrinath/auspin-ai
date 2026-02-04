@@ -11,9 +11,9 @@ export const footerContent: FooterContent = {
       links: [
         { text: "Board Readiness Package", href: "#services" },
         { text: "AI Portfolio Triage", href: "#services" },
-        { text: "Production-Grade Infrastructure", href: "#services" },
-        { text: "AI Firewall & Economics Model", href: "#services" },
-        { text: "Enterprise Rollout Engine", href: "#services" },
+        { text: "AI Deployment Readiness", href: "#services" },
+        { text: "AI Cost Control & Economics", href: "#services" },
+        { text: "Enterprise AI Rollout", href: "#services" },
         { text: "AI Independence Program", href: "#services" }
       ]
     },

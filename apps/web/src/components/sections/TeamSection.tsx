@@ -43,11 +43,11 @@ export function TeamSection() {
 
         {/* Core Team - Requirement 8.1 */}
         <div className="mb-20 md:mb-24">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto lg:items-stretch">
             {teamContent.coreTeam.map((member, index) => (
               <Card 
                 key={index}
-                className="bg-white border-stone-200 hover:shadow-xl transition-shadow duration-300"
+                className="bg-white border-stone-200 hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col"
               >
                 <CardHeader className="pb-4">
                   <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
@@ -90,7 +90,7 @@ export function TeamSection() {
                   </div>
                 </CardHeader>
                 
-                <CardContent className="space-y-5 pt-4">
+                <CardContent className="px-6 pb-6 space-y-5 pt-4 flex-grow">
                   {/* Credentials - Requirement 8.4 */}
                   <div>
                     <h4 className="text-xs font-semibold text-primary-600 uppercase tracking-wide mb-3">
@@ -110,17 +110,14 @@ export function TeamSection() {
                       ))}
                     </ul>
                   </div>
-                  
-                  {/* Why This Matters - Requirement 8.3 */}
-                  <div className="bg-stone-50 rounded-lg p-4 border border-stone-200">
-                    <h4 className="text-xs font-semibold text-accent uppercase tracking-wide mb-2">
-                      Why This Matters
-                    </h4>
-                    <p className="text-sm text-stone-700 leading-relaxed">
-                      {member.whyMatters}
-                    </p>
-                  </div>
                 </CardContent>
+                
+                {/* Why This Matters - Full width section at bottom */}
+                <div className="bg-stone-50 px-6 py-5 border-t border-stone-200 mt-auto min-h-0 lg:min-h-[240px]">
+                  <p className="text-sm text-stone-700 leading-relaxed">
+                    {member.whyMatters}
+                  </p>
+                </div>
               </Card>
             ))}
           </div>
@@ -132,11 +129,11 @@ export function TeamSection() {
             Strategic Advisors
           </h3>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto lg:items-stretch">
             {teamContent.advisors.map((advisor, index) => (
               <Card 
                 key={index}
-                className="bg-white border-stone-200 hover:shadow-xl transition-shadow duration-300 flex flex-col"
+                className="bg-white border-stone-200 hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col"
               >
                 <CardHeader className="pb-4">
                   <div className="flex flex-col items-center text-center gap-3">
@@ -177,13 +174,13 @@ export function TeamSection() {
                   </div>
                 </CardHeader>
                 
-                <CardContent className="space-y-4 pt-4 flex-1 flex flex-col">
+                <CardContent className="px-6 pb-6 space-y-4 pt-4 flex-grow">
                   {/* Credentials */}
-                  <ul className="space-y-2 flex-1">
+                  <ul className="space-y-2">
                     {advisor.credentials.map((credential, idx) => (
                       <li 
                         key={idx}
-                        className="flex items-start gap-2 text-xs text-stone-700 leading-relaxed"
+                        className="flex items-start gap-2 text-sm text-stone-700 leading-relaxed"
                       >
                         <span className="text-green-600 mt-0.5 flex-shrink-0" aria-hidden="true">
                           ✓
@@ -192,14 +189,14 @@ export function TeamSection() {
                       </li>
                     ))}
                   </ul>
-                  
-                  {/* Why This Matters */}
-                  <div className="bg-stone-50 rounded-lg p-3 border border-stone-200">
-                    <p className="text-xs text-stone-700 leading-relaxed">
-                      {advisor.whyMatters}
-                    </p>
-                  </div>
                 </CardContent>
+                
+                {/* Why This Matters - Full width section at bottom */}
+                <div className="bg-stone-50 px-6 py-4 border-t border-stone-200 mt-auto min-h-0 lg:min-h-[320px]">
+                  <p className="text-sm text-stone-700 leading-relaxed">
+                    {advisor.whyMatters}
+                  </p>
+                </div>
               </Card>
             ))}
           </div>

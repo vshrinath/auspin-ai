@@ -62,65 +62,48 @@ export function DifferentiationSection() {
         {/* Differentiators Grid - Requirement 3.2, 3.3 */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
           {differentiationContent.differentiators.map((differentiator, index) => {
-            const IconComponent = iconMap[differentiator.icon];
             
             return (
               <Card 
                 key={index}
-                className="bg-white border-stone-200 hover:shadow-lg transition-shadow duration-300"
+                className="bg-white border-stone-200 hover:shadow-lg transition-shadow duration-300 overflow-hidden p-0"
               >
-                <CardHeader>
-                  <div className="flex flex-col items-start gap-4">
-                    {/* Icon */}
-                    {IconComponent && (
-                      <div className="flex-shrink-0">
-                        <div className="w-12 h-12 rounded-lg bg-primary-50 flex items-center justify-center">
-                          <IconComponent 
-                            className="w-7 h-7 text-primary-600" 
-                            aria-hidden="true"
-                          />
-                        </div>
-                      </div>
-                    )}
-                    
-                    {/* Content */}
-                    <div className="flex-1">
-                      <CardTitle className="text-xl md:text-2xl text-primary-600 mb-3">
-                        {differentiator.title}
-                      </CardTitle>
-                      <CardDescription className="text-base text-stone-600 leading-relaxed">
-                        {differentiator.description}
-                      </CardDescription>
-                    </div>
-                  </div>
-                </CardHeader>
+                {/* Header with border */}
+                <div className="bg-stone-50 px-6 py-4 border-b border-stone-200">
+                  <CardTitle className="text-lg md:text-xl text-primary-600">
+                    {differentiator.title}
+                  </CardTitle>
+                </div>
+                
+                {/* Content */}
+                <div className="px-6 py-5">
+                  <CardDescription className="text-sm md:text-base text-stone-600 leading-relaxed">
+                    {differentiator.description}
+                  </CardDescription>
+                </div>
               </Card>
             );
           })}
         </div>
 
         {/* Honest Q&A Section - Requirement 3.4, 3.5 */}
-        <div className="max-w-4xl mx-auto">
-          <Card className="bg-white border-2 border-accent shadow-lg">
-            <CardHeader className="p-6 md:p-8">
-              <div className="space-y-6">
-                {/* Question */}
-                <div>
-                  <h3 className="text-xl md:text-2xl font-bold text-primary-600 mb-4 flex items-start gap-3">
-                    <span className="text-accent text-3xl" aria-hidden="true">💡</span>
-                    <span>{differentiationContent.honestQuestion}</span>
-                  </h3>
-                </div>
-                
-                {/* Answer */}
-                <div className="pl-0 md:pl-12">
-                  <p className="text-base md:text-lg text-stone-700 leading-relaxed">
-                    {differentiationContent.honestAnswer}
-                  </p>
-                </div>
-              </div>
-            </CardHeader>
-          </Card>
+        <div className="max-w-4xl mx-auto mt-12 md:mt-16">
+          <div className="space-y-6 p-8 md:p-10 border-l-4 border-white/30">
+            {/* Question */}
+            <div>
+              <h3 className="text-xl md:text-2xl font-bold text-white mb-4 flex items-start gap-3">
+                <span className="hidden md:inline text-gold-400 text-3xl" aria-hidden="true">💡</span>
+                <span>{differentiationContent.honestQuestion}</span>
+              </h3>
+            </div>
+            
+            {/* Answer */}
+            <div className="pl-0 md:pl-12">
+              <p className="text-base md:text-lg text-teal-50 leading-relaxed">
+                {differentiationContent.honestAnswer}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

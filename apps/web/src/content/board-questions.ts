@@ -24,8 +24,8 @@ export const boardQuestionsContent: BoardQuestionsContent = {
       icon: "building-office-2"
     },
     {
-      question: "How do we avoid vendor lock-in and consulting dependency?",
-      challenge: "Proprietary platforms and consulting models create permanent dependencies. You can't hire talent who understands your systems, and costs escalate with no exit strategy.",
+      question: "How do we make money if you're designed to make us independent?",
+      challenge: "We charge for building capability, not creating dependency. Our model is time-boxed sprints with clear deliverables and knowledge transfer. You own the strategy, the roadmap, and the capability—we're here to accelerate, not to stay forever.",
       icon: "lock-open"
     }
   ],

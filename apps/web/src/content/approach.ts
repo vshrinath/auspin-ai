@@ -13,7 +13,7 @@ export const approachContent: ApproachContent = {
       icon: "target"
     },
     {
-      title: "ROI and Unit Economics",
+      title: "ROI & Unit Economics",
       theRisk: "Organizations build AI systems without modeling unit economics. The pilot works great until you realize each AI-generated response costs $2.50 and you're processing 10 million requests per month. Now you're stuck with a $25M annual cloud bill for a system that saves $5M in labor costs.",
       howWeMitigateIt: "We model the full cost structure before production deployment—compute costs, data storage, API fees, human-in-the-loop review, error correction, and ongoing maintenance. Every AI system must have a clear path to positive ROI within 12-18 months. We build cost monitoring into the system from day one.",
       icon: "chart-bar"

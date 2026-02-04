@@ -10,7 +10,7 @@ export const servicesContent: ServicesContent = {
       title: "Board Readiness Package",
       icon: "presentation-chart-line",
       // The CXO Problem (Requirement 5.2)
-      cxoProblem: "Your board is asking tough questions about AI strategy, ROI, and risk—and you don't have clear answers. You need to present a credible AI plan that addresses their concerns about hype, costs, and execution risk without overselling or underselling the opportunity.",
+      cxoProblem: "We prepare you for board-level AI discussions with executive-ready strategy presentations, risk assessments, competitive analysis, and governance frameworks. You get clear answers to tough questions about ROI, execution risk, and competitive positioning—backed by data and realistic projections.",
       // What We Deliver (Requirement 5.3)
       deliverables: [
         "Executive-ready AI strategy presentation with clear business case and ROI projections",
@@ -25,7 +25,7 @@ export const servicesContent: ServicesContent = {
     {
       title: "AI Portfolio Triage",
       icon: "clipboard-document-check",
-      cxoProblem: "You have 15 AI pilots, 8 vendors, and no clear picture of what's working, what's failing, or where to invest next. Teams are building in silos, duplicating efforts, and creating technical debt. You need an honest assessment of your current AI portfolio and a clear prioritization framework.",
+      cxoProblem: "We audit your entire AI portfolio and provide honest kill/fix/fund recommendations. You get a consolidated roadmap that eliminates redundancies, sequences initiatives for maximum impact, and focuses resources on high-value opportunities with clear execution paths.",
       deliverables: [
         "Comprehensive audit of all AI initiatives with honest assessment of viability and ROI potential",
         "Kill/fix/fund recommendations for each initiative based on business value and technical feasibility",
@@ -38,7 +38,7 @@ export const servicesContent: ServicesContent = {
     {
       title: "AI Deployment Readiness",
       icon: "server-stack",
-      cxoProblem: "Your AI pilots work in demos but can't scale to production. You're missing the systems and processes to deploy AI reliably across the enterprise. Your technical teams are stuck, and business stakeholders are losing confidence in AI's viability.",
+      cxoProblem: "We build the production systems and processes needed to deploy AI reliably at scale. You get automated workflows, monitoring systems, cost controls, and operational playbooks that enable your teams to deploy and support AI independently.",
       deliverables: [
         "Production deployment framework with automated workflows and quality controls",
         "Performance monitoring and alerting systems tracking business impact and system health",
@@ -51,7 +51,7 @@ export const servicesContent: ServicesContent = {
     {
       title: "AI Cost Control & Economics",
       icon: "shield-exclamation",
-      cxoProblem: "You're spending heavily on AI with no visibility into costs or value creation. Expenses are unpredictable, and you can't answer basic questions about unit economics or ROI. You need financial controls and a sustainable economic model before scaling further.",
+      cxoProblem: "We establish financial controls and sustainable economic models for your AI investments. You get cost visibility, optimization strategies, unit economics tracking, and vendor strategies that prevent overruns and ensure positive ROI before scaling.",
       deliverables: [
         "Cost control framework with spending limits and automated alerts to prevent overruns",
         "Optimization strategies reducing AI costs without sacrificing quality or performance",
@@ -64,7 +64,7 @@ export const servicesContent: ServicesContent = {
     {
       title: "Enterprise AI Rollout",
       icon: "rocket-launch",
-      cxoProblem: "You have a successful AI pilot, but scaling it across the enterprise feels impossible. Change management is complex, different business units have different needs, and you're concerned about failures at scale. You need a proven approach for enterprise-wide deployment.",
+      cxoProblem: "We design and execute phased rollout strategies that scale AI across your enterprise with controlled risk. You get change management programs, customization frameworks, and success metrics that ensure adoption while maintaining business continuity.",
       deliverables: [
         "Phased rollout strategy with controlled expansion and clear success criteria at each stage",
         "Change management program including training, communication, and stakeholder engagement",
@@ -77,7 +77,7 @@ export const servicesContent: ServicesContent = {
     {
       title: "AI Independence Program",
       icon: "academic-cap",
-      cxoProblem: "You're dependent on vendors, consultants, and a handful of AI experts who could leave tomorrow. You need to build internal AI capabilities so your organization can execute independently. But you don't know how to hire, train, and organize AI teams for long-term success.",
+      cxoProblem: "We build your internal AI capabilities so you can execute independently. You get capability assessments, hiring playbooks, training programs, and operating models that develop sustainable AI expertise within your organization.",
       deliverables: [
         "AI capability assessment identifying skill gaps and training needs across technical and business teams",
         "Hiring playbook with role definitions, interview frameworks, and compensation benchmarks for AI talent",
