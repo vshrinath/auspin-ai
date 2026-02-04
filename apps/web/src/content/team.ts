@@ -9,31 +9,31 @@ export const teamContent: TeamContent = {
     {
       name: "Shrinath V",
       title: "Founder & Principal Consultant",
-      photo: "/images/team/shrinath.jpg",
+      photo: "/team/shrinath.jpg",
       // Credentials highlighting relevant experience (Requirement 8.4)
       credentials: [
-        "Ex-Amazon AI leader, managed $1B+ AI programs",
-        "Built production ML systems serving 100M+ customers",
-        "Led AI strategy for Amazon's retail and advertising businesses",
-        "15+ years in AI/ML, from research to production at scale",
-        "Advised Fortune 500 companies on AI transformation"
+        "20+ years building and scaling AI and technology systems",
+        "Led AI strategy and execution for enterprise transformation programs",
+        "Deep expertise in AI economics, risk management, and production deployment",
+        "Advised boards and CXOs on AI investment strategy and governance",
+        "Built systems serving millions of users with predictable costs and outcomes"
       ],
       // Why this matters - context explaining relevant experience (Requirement 8.3)
-      whyMatters: "Shrinath has seen AI at the largest scale in the world—Amazon's retail and advertising systems processing billions of predictions daily. He knows the difference between demos that impress and systems that deliver business value. He's navigated the organizational, technical, and economic challenges of AI at scale, and he's here to help you avoid the mistakes he's seen (and made) along the way.",
+      whyMatters: "Shrinath has navigated the full spectrum of AI challenges—from technical architecture to board-level strategy. He understands the difference between demos that impress and systems that deliver business value. His experience spans organizational change, technical execution, and economic modeling, helping you avoid costly mistakes and accelerate time to value.",
       linkedin: "https://www.linkedin.com/in/shrinathv/"
     },
     {
       name: "Ashish Gulati",
       title: "Co-Founder & Technical Lead",
-      photo: "/images/team/ashish.jpg",
+      photo: "/team/ashish-gulati-v2.jpg",
       credentials: [
-        "Ex-Amazon AI engineer, built ML infrastructure at scale",
-        "Designed and deployed production ML platforms serving millions",
-        "Expert in MLOps, model deployment, and production AI systems",
-        "12+ years building AI systems from prototype to production",
-        "Specialized in AI economics, cost optimization, and scalability"
+        "15+ years building production AI and ML infrastructure at scale",
+        "Expert in MLOps, model deployment, and production system reliability",
+        "Specialized in AI economics, cost optimization, and operational excellence",
+        "Built platforms serving millions with sub-second latency and predictable costs",
+        "Deep expertise in monitoring, versioning, and production AI governance"
       ],
-      whyMatters: "Ashish is the engineer who makes AI actually work in production. He's built the infrastructure that takes models from notebooks to systems serving millions of users with sub-second latency and predictable costs. He understands the operational realities of AI at scale—monitoring, versioning, rollbacks, cost management, and everything else that separates successful AI systems from expensive science projects.",
+      whyMatters: "Ashish makes AI work in production. He understands the operational realities that separate successful AI systems from expensive science projects—monitoring, cost management, rollbacks, and everything else that keeps systems running reliably at scale. His focus is on sustainable, economically viable AI that delivers consistent business value.",
       linkedin: "https://www.linkedin.com/in/ashishgulati/"
     }
   ],
@@ -42,21 +42,21 @@ export const teamContent: TeamContent = {
   advisors: [
     {
       name: "Mintoo Kakati",
-      title: "Strategic Advisor - Enterprise AI",
-      photo: "/images/team/mintoo.jpg",
+      title: "Strategic Advisor",
+      photo: "/team/mintoo.jpg",
       credentials: [
-        "Former CTO at multiple Fortune 500 companies",
-        "Led enterprise-wide AI transformations across retail, finance, and healthcare",
-        "Board member and advisor to AI startups and enterprises",
-        "30+ years in technology leadership and digital transformation"
+        "Advisor to enterprises and boards on AI and technology strategy",
+        "30+ years in technology leadership and digital transformation",
+        "Cross-industry experience in retail, finance, healthcare, and technology",
+        "Expert in organizational change, executive alignment, and business case development"
       ],
-      whyMatters: "Mintoo brings the CXO perspective—he's been in your seat, facing board questions about AI strategy, ROI, and risk. He knows how to navigate organizational politics, secure executive buy-in, and build the business case for AI investment. His experience spans multiple industries and company sizes, giving him pattern recognition for what works and what doesn't in enterprise AI adoption.",
+      whyMatters: "Mintoo brings the CXO perspective—he understands board-level questions about AI strategy, ROI, and risk. His experience spans organizational politics, executive buy-in, and building business cases that resonate at the governance level. He helps translate technical possibilities into strategic decisions.",
       linkedin: "https://www.linkedin.com/in/mintookokati/"
     },
     {
       name: "NP Menon",
       title: "Strategic Advisor - Board-Level AI Strategy",
-      photo: "/images/team/npmenon.jpg",
+      photo: "/team/np-menon-v2.jpg",
       credentials: [
         "Board Director at Bahwan CyberTek (global digital transformation company, 1,000+ customers including Fortune 500, 20+ countries)",
         "Led Group CEO's Office, driving AI-led transformation at board level",
@@ -69,15 +69,15 @@ export const teamContent: TeamContent = {
     },
     {
       name: "Ramesh Srinivasan",
-      title: "Strategic Advisor - AI Product & GTM",
-      photo: "/images/team/ramesh.jpg",
+      title: "Strategic Advisor - Product & GTM",
+      photo: "/team/ramesh-srinivasan.jpg",
       credentials: [
-        "Former VP Product at leading AI companies",
-        "Built and scaled AI products from 0 to $100M+ revenue",
-        "Expert in AI product strategy, go-to-market, and monetization",
-        "20+ years in product management and business development"
+        "20+ years in product management and business development",
+        "Built and scaled technology products from concept to market",
+        "Expert in product strategy, go-to-market, and monetization",
+        "Experience across enterprise software, SaaS, and AI-powered products"
       ],
-      whyMatters: "Ramesh knows how to turn AI capabilities into products that customers actually want and will pay for. He's navigated the challenges of AI product-market fit, pricing, and go-to-market strategy. His experience is invaluable for organizations looking to monetize AI capabilities or build AI-powered products, not just internal efficiency tools.",
+      whyMatters: "Ramesh knows how to turn AI capabilities into products that customers want and will pay for. He's navigated product-market fit, pricing, and go-to-market strategy for technology products. His experience is invaluable for organizations looking to monetize AI capabilities or build AI-powered products, not just internal efficiency tools.",
       linkedin: "https://www.linkedin.com/in/rameshsrinivasan/"
     }
   ]
