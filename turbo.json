@@ -5,15 +5,22 @@
     "API_BASE_URL",
     "NEXT_PUBLIC_API_URL"
   ],
-  "pipeline": {
+  "tasks": {
     "dev": {
       "cache": false,
       "persistent": true,
-      "dependsOn": ["^dev"]
+      "dependsOn": [
+        "^dev"
+      ]
     },
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**"]
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "dist/**",
+        ".next/**"
+      ]
     },
     "lint": {
       "outputs": []

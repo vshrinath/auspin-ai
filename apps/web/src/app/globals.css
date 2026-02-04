@@ -2,16 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Smooth scrolling for anchor links */
-html {
-  scroll-behavior: smooth;
+@layer base {
+  :root {
+    --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-jetbrains-mono: 'JetBrains Mono', Menlo, Monaco, 'Courier New', monospace;
+  }
+
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Apply font families */
+  body {
+    font-family: var(--font-inter);
+  }
+
+  /* Focus indicators for accessibility */
+  *:focus-visible {
+    outline: 2px solid theme('colors.gold.DEFAULT');
+    outline-offset: 2px;
+  }
 }
 
-/* Custom styles for better visual hierarchy */
-.text-balance {
-  text-wrap: balance;
-}
+@layer utilities {
+  /* Custom styles for better visual hierarchy */
+  .text-balance {
+    text-wrap: balance;
+  }
 
-.text-pretty {
-  text-wrap: pretty;
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Font family utilities */
+  .font-mono {
+    font-family: var(--font-jetbrains-mono);
+  }
 }

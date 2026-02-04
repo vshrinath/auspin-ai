@@ -1,52 +1,79 @@
 /**
  * AUSPIN Ventures - AI Strategic Execution Partner
- * Polished one-page site using Tailwind CSS
+ * Main landing page composed of all section components
+ * 
+ * Code Splitting Strategy:
+ * - Above-the-fold sections (Hero, RealityCheck, Differentiation) load immediately
+ * - Below-the-fold sections use dynamic imports for better performance
  */
 
-import { AuspinHero } from "../components/AuspinHero";
-import { ProblemSection } from "../components/ProblemSection";
-import { CommitmentsSection } from "../components/CommitmentsSection";
-import { ServicesSection } from "../components/ServicesSection";
-import { ExecutionSection } from "../components/ExecutionSection";
-import { MethodSection } from "../components/MethodSection";
-import { OutcomesSection } from "../components/OutcomesSection";
-import { AuspinTeamLarge } from "../components/AuspinTeamLarge";
-import { AuspinContact } from "../components/AuspinContact";
+import dynamic from 'next/dynamic';
+import {
+  HeroSection,
+  BoardQuestionsSection,
+  DifferentiationSection,
+} from '@/components/sections';
+import { Navbar } from '@/components/navigation/Navbar';
+
+// Dynamically import below-the-fold sections for code splitting
+const ApproachSection = dynamic(() => import('@/components/sections/ApproachSection'), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+
+const ServicesSection = dynamic(() => import('@/components/sections/ServicesSection'), {
+  loading: () => <div className="min-h-[600px]" />,
+});
+
+const ProcessSection = dynamic(() => import('@/components/sections/ProcessSection'), {
+  loading: () => <div className="min-h-[500px]" />,
+});
+
+const TeamSection = dynamic(() => import('@/components/sections/TeamSection'), {
+  loading: () => <div className="min-h-[600px]" />,
+});
+
+const CTASection = dynamic(() => import('@/components/sections/CTASection'), {
+  loading: () => <div className="min-h-[500px]" />,
+});
+
+const Footer = dynamic(() => import('@/components/sections/Footer'), {
+  loading: () => <div className="min-h-[300px]" />,
+});
 
 export default function HomePage() {
   return (
-    <main className="bg-white">
-      {/* Hero Section */}
-      <AuspinHero />
+    <>
+      {/* Navigation Bar */}
+      <Navbar />
+      
+      <main className="bg-white pt-16 md:pt-20">
+        {/* 1. Hero Section - Main headline and CTA */}
+        <HeroSection />
 
-      {/* Problem Section */}
-      <ProblemSection />
+      {/* 2. Board Questions Section - Strategic challenges boards face */}
+      <BoardQuestionsSection />
 
-      {/* Commitments Section */}
-      <CommitmentsSection />
+      {/* 3. Differentiation Section - What makes AUSPIN different */}
+      <DifferentiationSection />
 
-      {/* Services Section */}
+      {/* 4. Approach Section - Non-negotiable principles */}
+      <ApproachSection />
+
+      {/* 5. Services Section - 6 core services */}
       <ServicesSection />
 
-      {/* Execution Section */}
-      <ExecutionSection />
+      {/* 6. Process Section - 4-sprint timeline */}
+      <ProcessSection />
 
-      {/* Method Section */}
-      <MethodSection />
+      {/* 7. Team Section - Core team and advisors */}
+      <TeamSection />
 
-      {/* Outcomes Section */}
-      <OutcomesSection />
+      {/* 8. CTA Section - Contact form */}
+      <CTASection />
 
-      {/* Light Divider */}
-      <div className="flex justify-center py-8">
-        <div className="w-1/2 border-t border-gray-200"></div>
-      </div>
-
-      {/* Team Section */}
-      <AuspinTeamLarge />
-
-      {/* Contact Section */}
-      <AuspinContact />
+      {/* 9. Footer - Links and contact info */}
+      <Footer />
     </main>
+    </>
   );
 }

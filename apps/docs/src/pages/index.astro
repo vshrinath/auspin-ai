@@ -1,0 +1,88 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroSimpleCentered from "@salient/ui/test_components/Hero/HeroSimpleCentered";
+import StatsSimple from "@salient/ui/test_components/Stats/StatsSimple";
+import { GridLists, SectionHeadings } from "@salient/ui";
+import FeatureSimple from "@salient/ui/test_components/Feature/FeatureSimple";
+
+const { GridListsSimpleCards } = GridLists;
+const { SectionHeadingsSimple } = SectionHeadings;
+
+const heroProps = {
+  title: "Bridging the GenAI Divide",
+  description: "We help enterprise leaders move beyond AI theater into ROI-first execution. No generic advisory. Just technical reality and economic logic.",
+  primaryAction: { label: "Engagement", href: "/engagement" },
+  secondaryAction: { label: "Thinking", href: "/thinking" },
+  logo: { src: "/logo.svg", alt: "AUSPIN Ventures", href: "/" },
+  announcement: { message: "95% of GenAI pilots never reach production.", href: "/thinking", linkLabel: "Read why" }
+};
+
+const statsProps = {
+  title: "The Reality Check",
+  description: "Systemic failure modes we solve for.",
+  stats: [
+    { id: 1, name: "Adoption Stalls", value: "85%" },
+    { id: 2, name: "Model Mismatch", value: "70%" },
+    { id: 3, name: "Unit Economics", value: "60%" },
+    { id: 4, name: "Integration Gap", value: "90%" }
+  ]
+};
+
+const situations = [
+  { name: "Board Questions", description: "When the Board Is Asking Questions You Can’t Yet Answer", href: "/situations/board-questions" },
+  { name: "Innovation", description: "Innovation That Isn’t Fundable", href: "/situations/innovation-not-fundable" },
+  { name: "Business Model", description: "When the Business Model Breaks Under AI Economics", href: "/situations/business-model-break" },
+  { name: "Product", description: "Product That Isn’t Compounding", href: "/situations/product-not-compounding" },
+  { name: "Adoption", description: "Adoption Stalls at the Human Interface", href: "/situations/adoption-stalls" },
+  { name: "Skepticism", description: "AI Skepticism Reset", href: "/situations/ai-skepticism-reset" },
+];
+
+const workSteps = [
+  { name: "Alignment", description: "We align leadership on technical reality and business objectives." },
+  { name: "Feasibility", description: "We validate technical viability and economic logic through sprints." },
+  { name: "Commitment", description: "We define the roadmap for production and scale." },
+];
+---
+
+<BaseLayout title="Strategic AI Execution Partner">
+  <HeroSimpleCentered client:load {...heroProps} />
+
+  <div class="bg-gray-50 border-y border-gray-100">
+    <StatsSimple {...statsProps} />
+  </div>
+
+  <div class="py-24 sm:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 mb-16">
+      <SectionHeadingsSimple 
+        title="Situations We Enter" 
+        description="We focus on the specific inflection points where generalist advice fails and execution precision is required."
+      />
+    </div>
+    <GridListsSimpleCards items={situations} />
+  </div>
+
+  <div class="bg-gray-50 border-y border-gray-100">
+    <FeatureSimple 
+      title="How Work Typically Begins" 
+      description="We believe in rapid, technical validation over lengthy discovery." 
+      features={workSteps} 
+    />
+  </div>
+
+  <section class="py-24 sm:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6">
+          Practitioner Signal: Not Generic Advisory
+        </h2>
+        <p class="text-lg text-gray-600 leading-8 text-pretty mb-8">
+          We are a team of technicians and strategists who have built and scaled systems inside Big Tech AI labs and global enterprises. 
+          We brought the Silicon Valley AI playbook to Scale AI, Google, and diverse high-growth platforms.
+        </p>
+        <a href="/team" class="text-indigo-600 font-semibold hover:text-indigo-500">
+          Meet the practitioners →
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,50 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TeamLargeGridWithCards from "@salient/ui/test_components/Team/TeamLargeGridWithCards";
+
+const coreMembers = [
+  {
+    name: "Shrinath V",
+    role: "Co-founder",
+    imageUrl: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Ashish Gulati",
+    role: "Co-founder",
+    imageUrl: "https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    linkedinUrl: "#",
+  },
+];
+
+const advisors = [
+  {
+    name: "Mintoo Kakati",
+    role: "Advisor",
+    imageUrl: "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    linkedinUrl: "#",
+  },
+  {
+    name: "Ramesh Srinivasan",
+    role: "Advisor",
+    imageUrl: "https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+    linkedinUrl: "#",
+  },
+];
+---
+
+<BaseLayout title="Team">
+  <TeamLargeGridWithCards 
+    title="Core Team" 
+    description="We are practitioner-led, drawing on decades of experience in Big Tech AI and enterprise transformation." 
+    members={coreMembers} 
+  />
+
+  <div class="bg-gray-50 border-y border-gray-100">
+    <TeamLargeGridWithCards 
+      title="Advisory Board" 
+      description="Strategic guidance on enterprise transformation and global digital governance." 
+      members={advisors} 
+    />
+  </div>
+</BaseLayout>
