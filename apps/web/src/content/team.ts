@@ -8,32 +8,30 @@ export const teamContent: TeamContent = {
   coreTeam: [
     {
       name: "Shrinath V",
-      title: "Founder & Principal Consultant",
+      title: "Strategic Advisor & Systems Leader",
       photo: "/team/shrinath.jpg",
       // Credentials highlighting relevant experience (Requirement 8.4)
       credentials: [
-        "20+ years building and scaling AI and technology systems",
-        "Led AI strategy and execution for enterprise transformation programs",
-        "Deep expertise in AI economics, risk management, and production deployment",
-        "Advised boards and CXOs on AI investment strategy and governance",
-        "Built systems serving millions of users with predictable costs and outcomes"
+        "20+ years across product innovation and organizational transformation",
+        "Anchor mentor with Google for Startups (10+ years, 100+ founders across 5 continents)",
+        "Systems thinker aligning business, design, and technology",
+        "Surfaces hidden interdependencies in complex transformations"
       ],
       // Why this matters - context explaining relevant experience (Requirement 8.3)
-      whyMatters: "Shrinath has navigated the full spectrum of AI challenges—from technical architecture to board-level strategy. He understands the difference between demos that impress and systems that deliver business value. His experience spans organizational change, technical execution, and economic modeling, helping you avoid costly mistakes and accelerate time to value.",
+      whyMatters: "Shrinath brings deep systems thinking to AI strategy, helping boards and CXOs see beyond the technology to understand organizational, economic, and strategic interdependencies. His work with 100+ founders across 5 continents gives him pattern recognition for what works—and what fails—in AI transformation.",
       linkedin: "https://www.linkedin.com/in/shrinathv/"
     },
     {
       name: "Ashish Gulati",
-      title: "Co-Founder & Technical Lead",
+      title: "Data & AI Systems Architect",
       photo: "/team/ashish-gulati-v2.jpg",
       credentials: [
-        "15+ years building production AI and ML infrastructure at scale",
-        "Expert in MLOps, model deployment, and production system reliability",
-        "Specialized in AI economics, cost optimization, and operational excellence",
-        "Built platforms serving millions with sub-second latency and predictable costs",
-        "Deep expertise in monitoring, versioning, and production AI governance"
+        "15+ years in AI, data science, and cloud architecture across the Python ecosystem",
+        "Certified AWS Architect specializing in Machine Learning and Generative AI",
+        "Led technical transformations at Tower Research Capital, Flipkart, and Dell",
+        "10,000+ training hours delivered"
       ],
-      whyMatters: "Ashish makes AI work in production. He understands the operational realities that separate successful AI systems from expensive science projects—monitoring, cost management, rollbacks, and everything else that keeps systems running reliably at scale. His focus is on sustainable, economically viable AI that delivers consistent business value.",
+      whyMatters: "Ashish makes AI work in production. His expertise spans the full technical stack—from architecture to deployment to operations. He's trained thousands of practitioners and led transformations at scale, giving him deep insight into what it takes to move from proof-of-concept to production systems that deliver business value.",
       linkedin: "https://www.linkedin.com/in/ashishgulati/"
     }
   ],
@@ -42,42 +40,41 @@ export const teamContent: TeamContent = {
   advisors: [
     {
       name: "Mintoo Kakati",
-      title: "Strategic Advisor",
+      title: "Big Tech Scaling Expert & Innovator",
       photo: "/team/mintoo.jpg",
       credentials: [
-        "Advisor to enterprises and boards on AI and technology strategy",
-        "30+ years in technology leadership and digital transformation",
-        "Cross-industry experience in retail, finance, healthcare, and technology",
-        "Expert in organizational change, executive alignment, and business case development"
+        "12 years at Amazon; $2B+ in realized business value",
+        "3 AI systems patents",
+        "Launches at 100M+ weekly actives",
+        "Crafts Amazon-grade strategy & execution plans that align CXOs and teams"
       ],
-      whyMatters: "Mintoo brings the CXO perspective—he understands board-level questions about AI strategy, ROI, and risk. His experience spans organizational politics, executive buy-in, and building business cases that resonate at the governance level. He helps translate technical possibilities into strategic decisions.",
+      whyMatters: "Mintoo brings proven big-tech execution patterns to AI strategy. He's built and scaled AI systems at Amazon serving 100M+ users, navigated the organizational complexity of enterprise AI adoption, and knows how to align technical execution with board-level strategy. His patents and track record demonstrate deep expertise in AI systems that work at scale.",
       linkedin: "https://www.linkedin.com/in/mintookokati/"
     },
     {
-      name: "NP Menon",
-      title: "Strategic Advisor - Board-Level AI Strategy",
+      name: "Padmanabhan (NP) Menon",
+      title: "Managing Partner, AUSPIN Ventures",
       photo: "/team/np-menon-v2.jpg",
       credentials: [
-        "Board Director at Bahwan CyberTek (global digital transformation company, 1,000+ customers including Fortune 500, 20+ countries)",
-        "Led Group CEO's Office, driving AI-led transformation at board level",
-        "Managing Partner at AUSPIN Ventures",
-        "Founder & Board Director at Confianzys Consulting (India's first Product Management Consulting firm)",
-        "30+ years cross-vertical board experience (BFSI, Energy, Healthcare, Logistics, Government, Life Sciences)"
+        "Board Member and Advisor to growth-stage technology firms",
+        "30+ years in global strategy and product marketing",
+        "Deep expertise in AI, SaaS, and digital transformation",
+        "Cross-sector experience: BFSI, energy, and healthcare"
       ],
-      whyMatters: "NP brings board-level perspective to AI strategy. As Board Director at Bahwan CyberTek—a global digital transformation company serving 1,000+ customers including Fortune 500 firms across 20+ countries—he has guided AI-driven business model transformation and IP-led innovation at the highest governance level. He established and led the Group CEO's Office, improving strategic alignment and execution of growth programs at the board/CEO interface. His cross-vertical board experience across BFSI, Energy, Healthcare, Logistics, Government, and Life Sciences gives him unique insight into how boards evaluate AI investments, manage transformation risk, and shape portfolio bets for AI and technology systems.",
+      whyMatters: "NP brings board-level perspective to AI strategy. As a board member and advisor to growth-stage technology firms, he understands how boards evaluate AI investments, manage transformation risk, and shape strategic bets. His 30+ years in global strategy across BFSI, energy, and healthcare give him unique insight into sector-specific AI opportunities and challenges.",
       linkedin: "https://www.linkedin.com/in/npmenon/"
     },
     {
       name: "Ramesh Srinivasan",
-      title: "Strategic Advisor - Product & GTM",
+      title: "Senior Advisor, Leadership & Systems Design",
       photo: "/team/ramesh-srinivasan.jpg",
       credentials: [
-        "20+ years in product management and business development",
-        "Built and scaled technology products from concept to market",
-        "Expert in product strategy, go-to-market, and monetization",
-        "Experience across enterprise software, SaaS, and AI-powered products"
+        "Leadership coach, educator, and systems consultant",
+        "4,000+ coaching hours for 125+ senior leaders across India, SE Asia, and the Middle East",
+        "Former Head of Operations at HCL Technologies (Singapore)",
+        "Founder of i.e. Consulting"
       ],
-      whyMatters: "Ramesh knows how to turn AI capabilities into products that customers want and will pay for. He's navigated product-market fit, pricing, and go-to-market strategy for technology products. His experience is invaluable for organizations looking to monetize AI capabilities or build AI-powered products, not just internal efficiency tools.",
+      whyMatters: "Ramesh brings the human dimension to AI transformation. With 4,000+ coaching hours for senior leaders, he understands the organizational change challenges that make or break AI initiatives. His systems design expertise helps align leadership, culture, and execution—the critical factors that determine whether AI investments deliver value or become expensive experiments.",
       linkedin: "https://www.linkedin.com/in/rameshsrinivasan/"
     }
   ]
