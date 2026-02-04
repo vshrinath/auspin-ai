@@ -141,7 +141,7 @@ describe('Section Components - Basic Rendering', () => {
 
     it('should display contact information', () => {
       render(<Footer />);
-      expect(screen.getByText(/hello@auspin.ai/i)).toBeInTheDocument();
+      expect(screen.getByText(/hello@auspinventures.com/i)).toBeInTheDocument();
     });
 
     it('should display tagline', () => {

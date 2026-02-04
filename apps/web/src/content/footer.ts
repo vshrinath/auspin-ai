@@ -48,7 +48,7 @@ export const footerContent: FooterContent = {
   
   // Contact information (Requirement 12.2)
   contactInfo: {
-    email: "hello@auspin.ai",
+    email: "hello@auspinventures.com",
     phone: "+1 (555) 123-4567"
   },
   
