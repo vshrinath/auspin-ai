@@ -70,8 +70,9 @@ export function ApproachSection() {
               >
                 {/* Card Header with Icon and Title */}
                 <div className="flex items-center gap-4 mb-6 md:mb-8">
+                  {/* Icon - Hidden on mobile */}
                   {IconComponent && (
-                    <div className="flex-shrink-0">
+                    <div className="hidden md:block flex-shrink-0">
                       <div className="w-14 h-14 rounded-lg bg-primary-100 flex items-center justify-center">
                         <IconComponent 
                           className="w-8 h-8 text-primary-600" 

@@ -83,16 +83,16 @@ export function HeroSection() {
                   className="flex items-center gap-3 text-white"
                   role="listitem"
                 >
-                  {/* Icon */}
+                  {/* Icon - Hidden on mobile */}
                   {IconComponent && (
                     <IconComponent 
-                      className="w-8 h-8 md:w-10 md:h-10 flex-shrink-0 text-white" 
+                      className="hidden md:block w-10 h-10 flex-shrink-0 text-white" 
                       aria-hidden="true"
                     />
                   )}
                   
-                  {/* Badge Text */}
-                  <div className="flex flex-col items-start text-left">
+                  {/* Badge Text - Center aligned on mobile */}
+                  <div className="flex flex-col items-center md:items-start text-center md:text-left">
                     <span className="text-base md:text-lg font-semibold">
                       {badge.text}
                     </span>

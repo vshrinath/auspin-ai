@@ -68,9 +68,9 @@ export function BoardQuestionsSection() {
               >
                 <CardHeader className="pb-4">
                   <div className="flex items-start gap-4">
-                    {/* Icon */}
+                    {/* Icon - Hidden on mobile */}
                     {IconComponent && (
-                      <div className="flex-shrink-0 mt-1">
+                      <div className="hidden md:block flex-shrink-0 mt-1">
                         <div className="w-12 h-12 rounded-lg bg-teal-50 flex items-center justify-center">
                           <IconComponent 
                             className="w-6 h-6 text-teal-600" 

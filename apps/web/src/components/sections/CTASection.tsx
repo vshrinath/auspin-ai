@@ -114,7 +114,7 @@ export function CTASection({ preselectedService }: CTASectionProps) {
 
         {/* Lead magnet CTA */}
         <div className="text-center">
-          <div className="inline-flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-4">
             <p className="text-sm text-stone-600">
               Not ready to book? Start with our free assessment:
             </p>
@@ -124,7 +124,7 @@ export function CTASection({ preselectedService }: CTASectionProps) {
               onClick={handleLeadMagnetDownload}
               loading={downloadingLeadMagnet}
               disabled={downloadingLeadMagnet}
-              className="group"
+              className="group w-full sm:w-auto"
             >
               <svg
                 className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform"
@@ -145,66 +145,6 @@ export function CTASection({ preselectedService }: CTASectionProps) {
             <p className="text-xs text-stone-500">
               No email required • Instant download • 15-minute assessment
             </p>
-          </div>
-        </div>
-
-        {/* Trust indicators */}
-        <div className="mt-12 pt-8 border-t border-stone-200">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-            <div className="flex flex-col items-center">
-              <svg
-                className="w-8 h-8 text-deep-teal mb-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                />
-              </svg>
-              <p className="text-sm font-medium text-stone-900">Secure & Private</p>
-              <p className="text-xs text-stone-600">Your data is encrypted</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <svg
-                className="w-8 h-8 text-deep-teal mb-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              <p className="text-sm font-medium text-stone-900">24-Hour Response</p>
-              <p className="text-xs text-stone-600">We'll get back to you fast</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <svg
-                className="w-8 h-8 text-deep-teal mb-2"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              <p className="text-sm font-medium text-stone-900">No Sales Pitch</p>
-              <p className="text-xs text-stone-600">Just honest conversation</p>
-            </div>
           </div>
         </div>
       </div>

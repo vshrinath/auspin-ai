@@ -99,35 +99,14 @@ export function ProcessSection() {
                 className="bg-white border-stone-200 hover:shadow-lg transition-shadow duration-300"
               >
                 <CardHeader>
-                  <div className="flex items-start gap-4 mb-4">
-                    {/* Icon - Mobile */}
-                    {IconComponent && (
-                      <div className="flex-shrink-0 lg:hidden">
-                        <div className="w-12 h-12 rounded-lg bg-primary-100 flex items-center justify-center">
-                          <IconComponent 
-                            className="w-7 h-7 text-primary-600" 
-                            aria-hidden="true"
-                          />
-                        </div>
-                      </div>
-                    )}
-                    
-                    <div className="flex-1">
-                      {/* Sprint number */}
-                      <div className="text-sm font-bold text-accent mb-2">
-                        Sprint {index + 1}
-                      </div>
-                      
-                      {/* Title */}
-                      <CardTitle className="text-xl md:text-2xl text-primary-600 mb-2">
-                        {sprint.name}
-                      </CardTitle>
-                      
-                      {/* Duration badge - Mobile */}
-                      <div className="inline-block lg:hidden px-3 py-1 bg-accent text-white font-bold rounded-full text-sm">
-                        {sprint.duration}
-                      </div>
-                    </div>
+                  {/* Title as main header */}
+                  <CardTitle className="text-xl md:text-2xl text-primary-600 mb-3">
+                    Sprint {index + 1}: {sprint.name}
+                  </CardTitle>
+                  
+                  {/* Duration badge */}
+                  <div className="inline-block px-3 py-1 bg-accent text-white font-bold rounded-full text-sm">
+                    {sprint.duration}
                   </div>
                 </CardHeader>
                 
