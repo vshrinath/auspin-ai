@@ -65,7 +65,7 @@ export const teamContent: TeamContent = {
         "Cross-sector experience: BFSI, energy, and healthcare",
       ],
       whyMatters:
-        "NP brings board-level perspective to AI strategy. As a board member and advisor to growth-stage technology firms, he understands how boards evaluate AI investments, manage transformation risk, and shape strategic bets. His 30+ years in global strategy across BFSI, energy, and healthcare give him unique insight into sector-specific AI opportunities and challenges.",
+        "NP Menon brings board-level perspective to AI strategy. As a board member and advisor to growth-stage technology firms, he understands how boards evaluate AI investments, manage transformation risk, and shape strategic bets. His 30+ years in global strategy across BFSI, energy, and healthcare give him unique insight into sector-specific AI opportunities and challenges.",
       linkedin: "https://www.linkedin.com/in/padmanabhan-menon-8192224/",
     },
     {
