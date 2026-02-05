@@ -11,7 +11,7 @@ export const differentiationContent: DifferentiationContent = {
     {
       title: "Board-Level Perspective",
       description:
-        "We don't just advise boards—we sit on them. Our Managing Partner serves as Board Director at a global tech conglomerate, bringing experience from organizations serving Fortune 500 clients across 20+ countries. We understand board dynamics, governance requirements, and what it takes to get board buy-in for AI initiatives.",
+        "We don't just advise boards—we sit on them. People from our team have served as Board Directors at global tech conglomerates, bringing experience from organizations serving Fortune 500 clients across 20+ countries. We understand board dynamics, governance requirements, and what it takes to get board buy-in for AI initiatives.",
       icon: "building-office",
     },
     {

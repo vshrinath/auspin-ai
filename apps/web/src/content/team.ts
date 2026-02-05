@@ -59,13 +59,13 @@ export const teamContent: TeamContent = {
       title: "Managing Partner, AUSPIN Ventures",
       photo: "/team/np-menon-v2.jpg",
       credentials: [
-        "Board Member and Advisor to growth-stage technology firms",
-        "30+ years in global strategy and product marketing",
-        "Deep expertise in AI, SaaS, and digital transformation",
-        "Cross-sector experience: BFSI, energy, and healthcare",
+        "Former Board Director at a global digital transformation company serving Fortune 500 clients across 20+ countries",
+        "Led Group CEO's Office, driving AI-led transformation and IP-led innovation at board level",
+        "Founder & Board Director at Confianzys Consulting (India's first Product Management Consulting firm)",
+        "Board-level advisor to multiple growth-stage and startup companies in India and USA",
       ],
       whyMatters:
-        "NP Menon brings board-level perspective to AI strategy. As a board member and advisor to growth-stage technology firms, he understands how boards evaluate AI investments, manage transformation risk, and shape strategic bets. His 30+ years in global strategy across BFSI, energy, and healthcare give him unique insight into sector-specific AI opportunities and challenges.",
+        "NP Menon brings board governance experience to AI strategy. As former Board Director at a global company serving Fortune 500 clients, he has guided AI-driven business transformation at the highest level. From leading the Group CEO's Office and serving on multiple boards, he understands how boards evaluate AI investments and manage transformation risk across B2B and government sectors.",
       linkedin: "https://www.linkedin.com/in/padmanabhan-menon-8192224/",
     },
     {
